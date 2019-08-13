@@ -1,0 +1,190 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: chapter_MD_methods.aux
+The style file: my_bib.bst
+Database file #1: thesis_ref2.bib.bib
+Warning--I'm ignoring Leontiadou2006's extra "publisher" field
+--line 4457 of file thesis_ref2.bib.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You can't pop an empty literal stack for entry Hess1997
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Miyamoto1992
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Berendsen1984
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Nose1983
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Hoover1985
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Andersen1980
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Bussi2007
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Parrinello1981
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Martyna1996
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Oostenbrink2004
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Schmid2011
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Berendsen1995
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Abraham2015
+while executing---line 1649 of file my_bib.bst
+Warning--missing publisher in gromacs_man
+You can't pop an empty literal stack for entry gromacs_man
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Essmann1995
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Tironi1995
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Maier2015
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry MacKerell1998
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Klauda2010
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Jorgensen1988
+while executing---line 1649 of file my_bib.bst
+`journal' is a missing field, not a string, for entry Jorgensen1996
+while executing---line 1649 of file my_bib.bst
+Warning--empty journal in Jorgensen1996
+You can't pop an empty literal stack for entry Jorgensen1996
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Marrink2007
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Monticelli2008
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry DeJong2013
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Machado2018
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Barrera2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Lipkin2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Macpherson2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Machado2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Samsudin2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Berendsen1981
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry PDB
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Periole2009
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Yesylevskyy2010
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Lee2012
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Ren2003
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Ponder2010
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Anisimov2004
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Cieplak2001
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Orsi2011
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Ahmadi2018
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Fraternali1996
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Zhu2005
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Milano2009
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Okamoto2004
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Huber1994
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Laio2002
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Torrie1977
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Kirkpatrick1983
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Chakroun2013
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Collu2018
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Sengupta2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Risselada2008
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Song2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Leontiadou2006
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Ulmschneider2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Sun2015
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Wang2012
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Zhao2018
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Chen2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Castelletto2016
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Tang2009
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Glukhov2005
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Piggot2011
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Carpenter2016
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Hsu2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Khalid2019
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Fowler2016
+while executing---line 1649 of file my_bib.bst
+You've used 68 entries,
+            3261 wiz_defined-function locations,
+            1282 strings with 25787 characters,
+and the built_in function-call counts, 70914 in all, are:
+= -- 6595
+> -- 1612
+< -- 20
++ -- 684
+- -- 466
+* -- 6606
+:= -- 9371
+add.period$ -- 67
+call.type$ -- 68
+change.case$ -- 273
+chr.to.int$ -- 68
+cite$ -- 70
+duplicate$ -- 6553
+empty$ -- 6891
+format.name$ -- 686
+if$ -- 15103
+int.to.chr$ -- 1
+int.to.str$ -- 69
+missing$ -- 615
+newline$ -- 214
+num.names$ -- 206
+pop$ -- 1096
+preamble$ -- 1
+purify$ -- 204
+quote$ -- 0
+skip$ -- 928
+stack$ -- 0
+substring$ -- 9081
+swap$ -- 1665
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 406
+warning$ -- 2
+while$ -- 466
+width$ -- 0
+write$ -- 823
+(There were 69 error messages)

@@ -1,0 +1,370 @@
+\begin{thebibliography}{68}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Hess et~al(1997)Hess, Bekker, Berendsen, and Fraaije}]{Hess1997}
+Hess B, et~al (1997) {LINCS: A linear constraint solver for molecular
+  simulations}. Journal of Computational Chemistry 18(12):1463--1472
+
+\bibitem[{Miyamoto and Kollman(1992)}]{Miyamoto1992}
+Miyamoto S, and Kollman PA (1992) {Settle: An analytical version of the SHAKE
+  and RATTLE algorithm for rigid water models}. Journal of Computational
+  Chemistry 13(8):952--962
+
+\bibitem[{Berendsen et~al(1984)Berendsen, Postma, van Gunsteren, DiNola, and
+  Haak}]{Berendsen1984}
+Berendsen HJC, et~al (1984) {Molecular dynamics with coupling to an external
+  bath}. The Journal of Chemical Physics 81(8):3684--3690
+
+\bibitem[{Nos{\'{e}} and Klein(1983)}]{Nose1983}
+Nos{\'{e}} S, and Klein M (1983) {Constant pressure molecular dynamics for
+  molecular systems}. Molecular Physics 50(5):1055--1076
+
+\bibitem[{Hoover(1985)}]{Hoover1985}
+Hoover WG (1985) {Canonical dynamics: Equilibrium phase-space distributions}.
+  Physical Review A 31(3):1695--1697
+
+\bibitem[{Andersen(1980)}]{Andersen1980}
+Andersen HC (1980) {Molecular dynamics simulations at constant pressure and/or
+  temperature}. The Journal of Chemical Physics 72(4):2384--2393
+
+\bibitem[{Bussi et~al(2007)Bussi, Donadio, and Parrinello}]{Bussi2007}
+Bussi G, Donadio D, and Parrinello M (2007) {Canonical sampling through
+  velocity rescaling}. The Journal of Chemical Physics 126(1):014101
+
+\bibitem[{Parrinello and Rahman(1981)}]{Parrinello1981}
+Parrinello M, and Rahman A (1981) {Polymorphic transitions in single crystals:
+  A new molecular dynamics method}. Journal of Applied Physics
+  52(12):7182--7190
+
+\bibitem[{Martyna et~al(1996)Martyna, Tuckerman, Tobias, and
+  Klein}]{Martyna1996}
+Martyna GJ, et~al (1996) {Explicit reversible integrators for extended systems
+  dynamics}. Molecular Physics 87(5):1117--1157
+
+\bibitem[{Oostenbrink et~al(2004)Oostenbrink, Villa, Mark, and {Van
+  Gunsteren}}]{Oostenbrink2004}
+Oostenbrink C, et~al (2004) {A biomolecular force field based on the free
+  enthalpy of hydration and solvation: The GROMOS force-field parameter sets
+  53A5 and 53A6}. Journal of Computational Chemistry 25(13):1656--1676
+
+\bibitem[{Schmid et~al(2011)Schmid, Eichenberger, Choutko, Riniker, Winger,
+  Mark, and van Gunsteren}]{Schmid2011}
+Schmid N, et~al (2011) {Definition and testing of the GROMOS force-field
+  versions 54A7 and 54B7}. European Biophysics Journal 40(7):843--856
+
+\bibitem[{Berendsen et~al(1995)Berendsen, van~der Spoel, and van
+  Drunen}]{Berendsen1995}
+Berendsen H, van~der Spoel D, and van Drunen R (1995) {GROMACS: A
+  message-passing parallel molecular dynamics implementation}. Computer Physics
+  Communications 91(1-3):43--56
+
+\bibitem[{Abraham et~al(2015)Abraham, Murtola, Schulz, P{\'{a}}ll, Smith, Hess,
+  and Lindahl}]{Abraham2015}
+Abraham MJ, et~al (2015) {GROMACS: High performance molecular simulations
+  through multi-level parallelism from laptops to supercomputers}. SoftwareX
+  1-2:19--25
+
+\bibitem[{Abraham et~al(2018)Abraham, van~der Spoel, Lindahl, Hess, and the
+  GROMACS~development team}]{gromacs_man}
+Abraham MJ, et~al (2018) {GROMACS User Manual version 2016}. www.gromacs.org
+
+\bibitem[{Essmann et~al(1995)Essmann, Perera, Berkowitz, Darden, Lee, and
+  Pedersen}]{Essmann1995}
+Essmann U, et~al (1995) {A smooth particle mesh Ewald method}. The Journal of
+  Chemical Physics 103(19):8577--8593
+
+\bibitem[{Tironi et~al(1995)Tironi, Sperb, Smith, and van
+  Gunsteren}]{Tironi1995}
+Tironi IG, et~al (1995) {A generalized reaction field method for molecular
+  dynamics simulations}. The Journal of Chemical Physics 102(13):5451--5459
+
+\bibitem[{Maier et~al(2015)Maier, Martinez, Kasavajhala, Wickstrom, Hauser, and
+  Simmerling}]{Maier2015}
+Maier JA, et~al (2015) {ff14SB: Improving the Accuracy of Protein Side Chain
+  and Backbone Parameters from ff99SB}. Journal of Chemical Theory and
+  Computation 11(8):3696--3713
+
+\bibitem[{MacKerell et~al(1998)MacKerell, Bashford, Bellott, Dunbrack,
+  Evanseck, Field, Fischer, Gao, Guo, Ha, Joseph-McCarthy, Kuchnir, Kuczera,
+  Lau, Mattos, Michnick, Ngo, Nguyen, Prodhom, Reiher, Roux, Schlenkrich,
+  Smith, Stote, Straub, Watanabe, Wi{\'{o}}rkiewicz-Kuczera, Yin, and
+  Karplus}]{MacKerell1998}
+MacKerell AD, et~al (1998) {All-Atom Empirical Potential for Molecular Modeling
+  and Dynamics Studies of Proteins }. The Journal of Physical Chemistry B
+  102(18):3586--3616
+
+\bibitem[{Klauda et~al(2010)Klauda, Venable, Freites, O'Connor, Tobias,
+  Mondragon-Ramirez, Vorobyov, MacKerell, and Pastor}]{Klauda2010}
+Klauda JB, et~al (2010) {Update of the CHARMM All-Atom Additive Force Field for
+  Lipids: Validation on Six Lipid Types}. The Journal of Physical Chemistry B
+  114(23):7830--7843
+
+\bibitem[{Jorgensen and Tirado-Rives(1988)}]{Jorgensen1988}
+Jorgensen WL, and Tirado-Rives J (1988) {The OPLS [optimized potentials for
+  liquid simulations] potential functions for proteins, energy minimizations
+  for crystals of cyclic peptides and crambin}. Journal of the American
+  Chemical Society 110(6):1657--1666
+
+\bibitem[{{William L. Jorgensen} et~al(1996){William L. Jorgensen}, , {David S.
+  Maxwell}, and Tirado-Rives}]{Jorgensen1996}
+{William L Jorgensen}, et~al (1996) {Development and Testing of the OPLS
+  All-Atom Force Field on Conformational Energetics and Properties of Organic
+  Liquids}
+
+\bibitem[{Marrink et~al(2007)Marrink, Risselada, Yefimov, Tieleman, and {De
+  Vries}}]{Marrink2007}
+Marrink SJ, et~al (2007) {The MARTINI force field: Coarse grained model for
+  biomolecular simulations}. Journal of Physical Chemistry B 111(27):7812--7824
+
+\bibitem[{Monticelli et~al(2008)Monticelli, Kandasamy, Periole, Larson,
+  Tieleman, and Marrink}]{Monticelli2008}
+Monticelli L, et~al (2008) {The MARTINI Coarse-Grained Force Field: Extension
+  to Proteins.} Journal of chemical theory and computation 4(5):819--34
+
+\bibitem[{de~Jong et~al(2013)de~Jong, Singh, Bennett, Arnarez, Wassenaar,
+  Sch{\"{a}}fer, Periole, Tieleman, and Marrink}]{DeJong2013}
+de~Jong DH, et~al (2013) {Improved Parameters for the Martini Coarse-Grained
+  Protein Force Field}. Journal of Chemical Theory and Computation
+  9(1):687--697
+
+\bibitem[{Machado et~al(2018)Machado, Guisasola, Klein, S{\'{o}}{\~{n}}ora,
+  Silva, and Pantano}]{Machado2018}
+Machado MR, et~al (2018) {The SIRAH force field 2.0: Altius, Fortius, Citius}.
+  bioRxiv p 436774
+
+\bibitem[{Barrera et~al(2019)Barrera, Machado, and Pantano}]{Barrera2019}
+Barrera EE, Machado MR, and Pantano S (2019) {Fat SIRAH: Coarse-grained
+  phospholipids to explore membrane-protein dynamics}. bioRxiv p 627570
+
+\bibitem[{Lipkin et~al(2017)Lipkin, Pino-Angeles, and Lazaridis}]{Lipkin2017}
+Lipkin R, Pino-Angeles A, and Lazaridis T (2017) {Transmembrane Pore Structures
+  of $\beta$-Hairpin Antimicrobial Peptides by All-Atom Simulations}. The
+  Journal of Physical Chemistry B 121(39):9126--9140
+
+\bibitem[{Macpherson et~al(2019)Macpherson, Theisen, Masino, Fets, Driscoll,
+  Encheva, Snijders, Martin, Kleinjung, Barran, Fraternali, and
+  Anastasiou}]{Macpherson2019}
+Macpherson JA, et~al (2019) {Functional cross-talk between allosteric effects
+  of activating and inhibiting ligands underlies PKM2 regulation}. eLife 8
+
+\bibitem[{Machado et~al(2017)Machado, Gonz{\'{a}}lez, and
+  Pantano}]{Machado2017}
+Machado MR, Gonz{\'{a}}lez HC, and Pantano S (2017) {MD Simulations of
+  Viruslike Particles with Supra CG Solvation Affordable to Desktop Computers}.
+  Journal of Chemical Theory and Computation 13(10):5106--5116
+
+\bibitem[{Samsudin et~al(2017)Samsudin, Boags, Piggot, and
+  Khalid}]{Samsudin2017}
+Samsudin F, et~al (2017) {Braun's Lipoprotein Facilitates OmpA Interaction with
+  the Escherichia coli Cell Wall}. Biophysical Journal 113(7):1496--1504
+
+\bibitem[{Berendsen et~al(1981)Berendsen, Postma, Van~Gunsteren, and
+  Hermans}]{Berendsen1981}
+Berendsen H, et~al (1981) Interaction models for water in relation to protein
+  hydration. In: Pullman B (ed) Intermolecular Forces, D. Reidel Publishing
+  Company, Dordrecht, pp 331--342
+
+\bibitem[{Berman et~al(2000)Berman, Westbrook, Feng, Gilliland, Bhat, Weissig,
+  Shindyalov, and Bourne}]{PDB}
+Berman HM, et~al (2000) The protein data bank. Nucleic Acids Research, 28:
+  235-242
+
+\bibitem[{Periole et~al(2009)Periole, Cavalli, Marrink, and
+  Ceruso}]{Periole2009}
+Periole X, et~al (2009) {Combining an Elastic Network With a Coarse-Grained
+  Molecular Force Field: Structure, Dynamics, and Intermolecular Recognition}.
+  Journal of Chemical Theory and Computation 5(9):2531--2543
+
+\bibitem[{Yesylevskyy et~al(2010)Yesylevskyy, Sch{\"{a}}fer, Sengupta, and
+  Marrink}]{Yesylevskyy2010}
+Yesylevskyy SO, et~al (2010) {Polarizable Water Model for the Coarse-Grained
+  MARTINI Force Field}. PLoS Computational Biology 6(6):e1000810
+
+\bibitem[{Lee et~al(2012)Lee, Cho, and Schatz}]{Lee2012}
+Lee OS, Cho V, and Schatz GC (2012) {Modeling the Self-Assembly of Peptide
+  Amphiphiles into Fibers Using Coarse-Grained Molecular Dynamics}. Nano
+  Letters 12(9):4907--4913
+
+\bibitem[{Ren and Ponder(2003)}]{Ren2003}
+Ren P, and Ponder JW (2003) {Polarizable Atomic Multipole Water Model for
+  Molecular Mechanics Simulation}. Jurnal of Physical Chemistry B
+  24(107):5933--5947
+
+\bibitem[{Ponder et~al(2010)Ponder, Wu, Ren, Pande, Chodera, Schnieders, Haque,
+  Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson, and
+  Head-Gordon}]{Ponder2010}
+Ponder JW, et~al (2010) {Current Status of the AMOEBA Polarizable Force Field}.
+  The Journal of Physical Chemistry B 114(8):2549--2564
+
+\bibitem[{Anisimov et~al(2005)Anisimov, Lamoureux, Vorobyov, Huang, Roux, and
+  MacKerell}]{Anisimov2004}
+Anisimov VM, et~al (2005) {Determination of Electrostatic Parameters for a
+  Polarizable Force Field Based on the Classical Drude Oscillator}. Journal of
+  Chemical Theory and Computation 1(1):153--168
+
+\bibitem[{Cieplak et~al(2001)Cieplak, Caldwell, and Kollman}]{Cieplak2001}
+Cieplak P, Caldwell J, and Kollman P (2001) {Molecular mechanical models for
+  organic and biological systems going beyond the atom centered two body
+  additive approximation: aqueous solution free energies of methanol and
+  N-methyl acetamide, nucleic acid base, and amide hydrogen bonding and
+  chloroform/water partition coefficients of the nucleic acid bases}. Journal
+  of Computational Chemistry 22(10):1048--1057
+
+\bibitem[{Orsi and Essex(2011)}]{Orsi2011}
+Orsi M, and Essex JW (2011) {The ELBA Force Field for Coarse-Grain Modeling of
+  Lipid Membranes}. PLoS ONE 6(12):e28637
+
+\bibitem[{Ahmadi et~al(2018)Ahmadi, {Barrios Herrera}, Chehelamirani,
+  Hosta{\v{s}}, Jalife, and Salahub}]{Ahmadi2018}
+Ahmadi S, et~al (2018) {Multiscale modeling of enzymes: QM-cluster, QM/MM, and
+  QM/MM/MD: A tutorial review}. International Journal of Quantum Chemistry
+  118(9):e25558
+
+\bibitem[{Fraternali and van Gunsteren(1996)}]{Fraternali1996}
+Fraternali F, and van Gunsteren W (1996) {An Efficient Mean Solvation Force
+  Model for Use in Molecular Dynamics Simulations of Proteins in Aqueous
+  Solution}. Journal of Molecular Biology 256(5):939--948
+
+\bibitem[{Zhu et~al(2005)Zhu, Alexov, and Honig}]{Zhu2005}
+Zhu J, Alexov E, and Honig B (2005) {Comparative Study of Generalized Born
+  Models: Born Radii and Peptide Folding}. The Journal of Physical Chemistry B
+  109(7):3008--3022
+
+\bibitem[{Milano and Kawakatsu(2009)}]{Milano2009}
+Milano G, and Kawakatsu T (2009) {Hybrid particle-field molecular dynamics
+  simulations for dense polymer systems}. The Journal of Chemical Physics
+  130(21):214106
+
+\bibitem[{Okamoto(2004)}]{Okamoto2004}
+Okamoto Y (2004) {Generalized-ensemble algorithms: enhanced sampling techniques
+  for Monte Carlo and molecular dynamics simulations}. Journal of Molecular
+  Graphics and Modelling 22(5):425--439
+
+\bibitem[{Huber et~al(1994)Huber, Torda, and van Gunsteren}]{Huber1994}
+Huber T, Torda AE, and van Gunsteren WF (1994) {Local elevation: A method for
+  improving the searching properties of molecular dynamics simulation}. The
+  Journal of Physical Chemistry A 101(33):5926--5930
+
+\bibitem[{Laio and Parrinello(2002)}]{Laio2002}
+Laio A, and Parrinello M (2002) {Escaping free-energy minima.} Proceedings of
+  the National Academy of Sciences of the United States of America
+  99(20):12562--6
+
+\bibitem[{Torrie and Valleau(1977)}]{Torrie1977}
+Torrie G, and Valleau J (1977) {Nonphysical sampling distributions in Monte
+  Carlo free-energy estimation: Umbrella sampling}. Journal of Computational
+  Physics 23(2):187--199
+
+\bibitem[{Kirkpatrick et~al(1983)Kirkpatrick, Gelatt, and
+  Vecchi}]{Kirkpatrick1983}
+Kirkpatrick S, Gelatt CD, and Vecchi MP (1983) {Optimization by Simulated
+  Annealing}. Science 220(4598):671--680
+
+\bibitem[{Chakroun et~al(2013)Chakroun, Fornili, Prigent, Kleinjung, Dreiss,
+  Rezaei, and Fraternali}]{Chakroun2013}
+Chakroun N, et~al (2013) {Decrypting Prion Protein Conversion into a
+  $\beta$-Rich Conformer by Molecular Dynamics}. Journal of Chemical Theory and
+  Computation 9(5):2455--2465
+
+\bibitem[{Collu et~al(2018)Collu, Spiga, Chakroun, Rezaei, and
+  Fraternali}]{Collu2018}
+Collu F, et~al (2018) {Probing the early stages of prion protein (PrP)
+  aggregation with atomistic molecular dynamics simulations}. Chemical
+  Communications 54(57):8007--8010
+
+\bibitem[{Sengupta et~al(2019)Sengupta, Carballo-Pacheco, and
+  Strodel}]{Sengupta2019}
+Sengupta U, Carballo-Pacheco M, and Strodel B (2019) {Automated Markov state
+  models for molecular dynamics simulations of aggregation and self-assembly}.
+  The Journal of Chemical Physics 150(11):115101
+
+\bibitem[{Risselada and Marrink(2008)}]{Risselada2008}
+Risselada HJ, and Marrink SJ (2008) {The molecular face of lipid rafts in model
+  membranes.} Proceedings of the National Academy of Sciences of the United
+  States of America 105(45):17367--72
+
+\bibitem[{Song et~al(2019)Song, de~Groot, and Sansom}]{Song2019}
+Song C, de~Groot BL, and Sansom MS (2019) {Lipid Bilayer Composition Influences
+  the Activity of the Antimicrobial Peptide Dermcidin Channel}. Biophysical
+  Journal 116(9):1658--1666
+
+\bibitem[{Leontiadou et~al(2006)Leontiadou, Mark, and Marrink}]{Leontiadou2006}
+Leontiadou H, Mark AE, and Marrink SJ (2006) {Antimicrobial Peptides in
+  Action}. Journal of the American Chemical Society 128(37):12156--12161
+
+\bibitem[{Ulmschneider(2017)}]{Ulmschneider2017}
+Ulmschneider JP (2017) {Charged Antimicrobial Peptides Can Translocate across
+  Membranes without Forming Channel-like Pores}. Biophysical Journal
+  113(1):73--81
+
+\bibitem[{Sun et~al(2015)Sun, Forsman, and Woodward}]{Sun2015}
+Sun D, Forsman J, and Woodward CE (2015) {Atomistic Molecular Simulations
+  Suggest a Kinetic Model for Membrane Translocation by Arginine-Rich
+  Peptides}. The Journal of Physical Chemistry B 119(45):14413--14420
+
+\bibitem[{Wang et~al(2012)Wang, Schlamadinger, Kim, and McCammon}]{Wang2012}
+Wang Y, et~al (2012) {Comparative molecular dynamics simulations of the
+  antimicrobial peptide CM15 in model lipid bilayers}. Biochimica et Biophysica
+  Acta (BBA) - Biomembranes 1818(5):1402--1409, \eprint{NIHMS150003}
+
+\bibitem[{Zhao et~al(2018)Zhao, Cao, Bian, Hu, Wang, and Zhou}]{Zhao2018}
+Zhao L, et~al (2018) {Molecular Dynamics Simulations of Human Antimicrobial
+  Peptide LL-37 in Model POPC and POPG Lipid Bilayers}. International Journal
+  of Molecular Sciences 19(4):1186
+
+\bibitem[{Chen et~al(2019)Chen, Starr, Troendle, Wiedman, Wimley, Ulmschneider,
+  and Ulmschneider}]{Chen2019}
+Chen C, et~al (2019) {Simulation-guided rational \textit{de novo} design of a
+  small pore-forming antimicrobial peptide}. Journal of the American Chemical
+  Society p jacs.8b11939
+
+\bibitem[{Castelletto et~al(2016)Castelletto, de~Santis, Alkassem, Lamarre,
+  Noble, Ray, Bella, Burns, Hoogenboom, Ryadnov, Vandesompele, and
+  Wittwer}]{Castelletto2016}
+Castelletto V, et~al (2016) {Structurally plastic peptide capsules for
+  synthetic antimicrobial viruses}. Chem Sci 7(3):1707--1711
+
+\bibitem[{Tang and Hong(2009)}]{Tang2009}
+Tang M, and Hong M (2009) {Structure and mechanism of $\beta$-hairpin
+  antimicrobial peptides in lipid bilayers from solid-state NMR spectroscopy}.
+  Molecular BioSystems 5(4):317
+
+\bibitem[{Glukhov et~al(2005)Glukhov, Stark, Burrows, and Deber}]{Glukhov2005}
+Glukhov E, et~al (2005) {Basis for selectivity of cationic antimicrobial
+  peptides for bacterial versus mammalian membranes.} The Journal of biological
+  chemistry 280(40):33960--7
+
+\bibitem[{Piggot et~al(2011)Piggot, Holdbrook, and Khalid}]{Piggot2011}
+Piggot TJ, Holdbrook DA, and Khalid S (2011) {Electroporation of the E. coli
+  and S. Aureus Membranes: Molecular Dynamics Simulations of Complex Bacterial
+  Membranes}. The Journal of Physical Chemistry B 115(45):13381--13388
+
+\bibitem[{Carpenter et~al(2016)Carpenter, Parkin, and Khalid}]{Carpenter2016}
+Carpenter TS, Parkin J, and Khalid S (2016) {The Free Energy of Small Solute
+  Permeation through the \textit{Escherichia coli} Outer Membrane Has a
+  Distinctly Asymmetric Profile}. The Journal of Physical Chemistry Letters
+  7(17):3446--3451
+
+\bibitem[{Hsu et~al(2017)Hsu, Samsudin, Shearer, and Khalid}]{Hsu2017}
+Hsu PC, et~al (2017) {It Is Complicated: Curvature, Diffusion, and Lipid
+  Sorting within the Two Membranes of Escherichia coli}. The Journal of
+  Physical Chemistry Letters 8(22):5513--5518
+
+\bibitem[{Khalid et~al(2019)Khalid, Piggot, and Samsudin}]{Khalid2019}
+Khalid S, Piggot TJ, and Samsudin F (2019) {Atomistic and Coarse Grain
+  Simulations of the Cell Envelope of Gram-Negative Bacteria: What Have We
+  Learned?} Accounts of Chemical Research 52(1):180--188
+
+\bibitem[{Fowler et~al(2016)Fowler, H{\'{e}}, Duncan, Chavent, Kolds{\o}, and
+  Sansom}]{Fowler2016}
+Fowler PW, et~al (2016) {Membrane stiffness is modified by integral membrane
+  proteins}. Soft Matter 12:7792
+
+\end{thebibliography}
