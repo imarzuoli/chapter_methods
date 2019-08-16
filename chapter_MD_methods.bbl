@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -8,14 +8,24 @@
   \urlstyle{rm}\Url}\fi
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{Hess et~al(1997)Hess, Bekker, Berendsen, and Fraaije}]{Hess1997}
-Hess B, et~al (1997) {LINCS: A linear constraint solver for molecular
-  simulations}. Journal of Computational Chemistry 18(12):1463--1472
+\bibitem[{Lee et~al(2009)Lee, Hsin, Sotomayor, Comellas, and
+  Schulten}]{Lee2009}
+Lee EH, et~al (2009) {Discovery Through the Computational Microscope}.
+  Structure 17(10):1295--1306
 
-\bibitem[{Miyamoto and Kollman(1992)}]{Miyamoto1992}
-Miyamoto S, and Kollman PA (1992) {Settle: An analytical version of the SHAKE
-  and RATTLE algorithm for rigid water models}. Journal of Computational
-  Chemistry 13(8):952--962
+\bibitem[{Dror et~al(2012)Dror, Dirks, Grossman, Xu, and Shaw}]{Dror2012}
+Dror RO, et~al (2012) {Biomolecular Simulation: A Computational Microscope for
+  Molecular Biology}. Annual Review of Biophysics 41(1):429--452
+
+\bibitem[{Vogel and Huster(2017)}]{Vogel2017}
+Vogel A, and Huster D (2017) {Combining NMR Spectroscopy and Molecular Dynamics
+  Simulation to Investigate the Structure and Dynamics of Membrane-Associated
+  Proteins}. Springer, Cham, pp 311--350
+
+\bibitem[{Heo and Feig(2018)}]{Heo2018}
+Heo L, and Feig M (2018) {Experimental accuracy in protein structure refinement
+  via molecular dynamics simulations.} Proceedings of the National Academy of
+  Sciences of the United States of America 115(52):13276--13281
 
 \bibitem[{Berendsen et~al(1984)Berendsen, Postma, van Gunsteren, DiNola, and
   Haak}]{Berendsen1984}
@@ -85,11 +95,43 @@ Essmann U, et~al (1995) {A smooth particle mesh Ewald method}. The Journal of
 Tironi IG, et~al (1995) {A generalized reaction field method for molecular
   dynamics simulations}. The Journal of Chemical Physics 102(13):5451--5459
 
+\bibitem[{Lipkin et~al(2017)Lipkin, Pino-Angeles, and Lazaridis}]{Lipkin2017}
+Lipkin R, Pino-Angeles A, and Lazaridis T (2017) {Transmembrane Pore Structures
+  of $\beta$-Hairpin Antimicrobial Peptides by All-Atom Simulations}. The
+  Journal of Physical Chemistry B 121(39):9126--9140
+
+\bibitem[{Macpherson et~al(2019)Macpherson, Theisen, Masino, Fets, Driscoll,
+  Encheva, Snijders, Martin, Kleinjung, Barran, Fraternali, and
+  Anastasiou}]{Macpherson2019}
+Macpherson JA, et~al (2019) {Functional cross-talk between allosteric effects
+  of activating and inhibiting ligands underlies PKM2 regulation}. eLife 8
+
+\bibitem[{Machado et~al(2017)Machado, Gonz{\'{a}}lez, and
+  Pantano}]{Machado2017}
+Machado MR, Gonz{\'{a}}lez HC, and Pantano S (2017) {MD Simulations of
+  Viruslike Particles with Supra CG Solvation Affordable to Desktop Computers}.
+  Journal of Chemical Theory and Computation 13(10):5106--5116
+
+\bibitem[{Samsudin et~al(2017)Samsudin, Boags, Piggot, and
+  Khalid}]{Samsudin2017}
+Samsudin F, et~al (2017) {Braun's Lipoprotein Facilitates OmpA Interaction with
+  the Escherichia coli Cell Wall}. Biophysical Journal 113(7):1496--1504
+
 \bibitem[{Maier et~al(2015)Maier, Martinez, Kasavajhala, Wickstrom, Hauser, and
   Simmerling}]{Maier2015}
 Maier JA, et~al (2015) {ff14SB: Improving the Accuracy of Protein Side Chain
   and Backbone Parameters from ff99SB}. Journal of Chemical Theory and
   Computation 11(8):3696--3713
+
+\bibitem[{Dickson et~al(2014)Dickson, Madej, Skjevik, Betz, Teigen, Gould, and
+  Walker}]{Dickson2014}
+Dickson CJ, et~al (2014) {Lipid14: The Amber Lipid Force Field}. Journal of
+  Chemical Theory and Computation 10(2):865--879
+
+\bibitem[{Wang et~al(2004)Wang, Wolf, Caldwell, Kollman, and
+  Case}]{Wang2004_amber}
+Wang J, et~al (2004) {Development and testing of a general amber force field}.
+  Journal of Computational Chemistry 25(9):1157--1174
 
 \bibitem[{MacKerell et~al(1998)MacKerell, Bashford, Bellott, Dunbrack,
   Evanseck, Field, Fischer, Gao, Guo, Ha, Joseph-McCarthy, Kuchnir, Kuczera,
@@ -105,6 +147,11 @@ MacKerell AD, et~al (1998) {All-Atom Empirical Potential for Molecular Modeling
 Klauda JB, et~al (2010) {Update of the CHARMM All-Atom Additive Force Field for
   Lipids: Validation on Six Lipid Types}. The Journal of Physical Chemistry B
   114(23):7830--7843
+
+\bibitem[{Huang and MacKerell(2013)}]{Huang2013}
+Huang J, and MacKerell AD (2013) {CHARMM36 all-atom additive protein force
+  field: Validation based on comparison to NMR data}. Journal of Computational
+  Chemistry 34(25):2135--2145
 
 \bibitem[{Jorgensen and Tirado-Rives(1988)}]{Jorgensen1988}
 Jorgensen WL, and Tirado-Rives J (1988) {The OPLS [optimized potentials for
@@ -143,27 +190,16 @@ Machado MR, et~al (2018) {The SIRAH force field 2.0: Altius, Fortius, Citius}.
 Barrera EE, Machado MR, and Pantano S (2019) {Fat SIRAH: Coarse-grained
   phospholipids to explore membrane-protein dynamics}. bioRxiv p 627570
 
-\bibitem[{Lipkin et~al(2017)Lipkin, Pino-Angeles, and Lazaridis}]{Lipkin2017}
-Lipkin R, Pino-Angeles A, and Lazaridis T (2017) {Transmembrane Pore Structures
-  of $\beta$-Hairpin Antimicrobial Peptides by All-Atom Simulations}. The
-  Journal of Physical Chemistry B 121(39):9126--9140
+\bibitem[{Oostenbrink et~al(2005)Oostenbrink, Soares, van~der Vegt, and van
+  Gunsteren}]{Oostenbrink2005}
+Oostenbrink C, et~al (2005) {Validation of the 53A6 GROMOS force field}.
+  European Biophysics Journal 34(4):273--284
 
-\bibitem[{Macpherson et~al(2019)Macpherson, Theisen, Masino, Fets, Driscoll,
-  Encheva, Snijders, Martin, Kleinjung, Barran, Fraternali, and
-  Anastasiou}]{Macpherson2019}
-Macpherson JA, et~al (2019) {Functional cross-talk between allosteric effects
-  of activating and inhibiting ligands underlies PKM2 regulation}. eLife 8
-
-\bibitem[{Machado et~al(2017)Machado, Gonz{\'{a}}lez, and
-  Pantano}]{Machado2017}
-Machado MR, Gonz{\'{a}}lez HC, and Pantano S (2017) {MD Simulations of
-  Viruslike Particles with Supra CG Solvation Affordable to Desktop Computers}.
-  Journal of Chemical Theory and Computation 13(10):5106--5116
-
-\bibitem[{Samsudin et~al(2017)Samsudin, Boags, Piggot, and
-  Khalid}]{Samsudin2017}
-Samsudin F, et~al (2017) {Braun's Lipoprotein Facilitates OmpA Interaction with
-  the Escherichia coli Cell Wall}. Biophysical Journal 113(7):1496--1504
+\bibitem[{Reif et~al(2013)Reif, Winger, and Oostenbrink}]{Reif2013}
+Reif MM, Winger M, and Oostenbrink C (2013) {Testing of the GROMOS Force-Field
+  Parameter Set 54A8: Structural Properties of Electrolyte Solutions, Lipid
+  Bilayers, and Proteins}. Journal of Chemical Theory and Computation
+  9(2):1247--1264
 
 \bibitem[{Berendsen et~al(1981)Berendsen, Postma, Van~Gunsteren, and
   Hermans}]{Berendsen1981}
@@ -186,6 +222,12 @@ Periole X, et~al (2009) {Combining an Elastic Network With a Coarse-Grained
   Marrink}]{Yesylevskyy2010}
 Yesylevskyy SO, et~al (2010) {Polarizable Water Model for the Coarse-Grained
   MARTINI Force Field}. PLoS Computational Biology 6(6):e1000810
+
+\bibitem[{Wassenaar et~al(2015)Wassenaar, Ing{\'{o}}lfsson, B{\"{o}}ckmann,
+  Tieleman, and Marrink}]{Wassenaar2015}
+Wassenaar TA, et~al (2015) {Computational Lipidomics with \textit{insane} : A
+  Versatile Tool for Generating Custom Membranes for Molecular Simulations}.
+  Journal of Chemical Theory and Computation 11(5):2144--2155
 
 \bibitem[{Lee et~al(2012)Lee, Cho, and Schatz}]{Lee2012}
 Lee OS, Cho V, and Schatz GC (2012) {Modeling the Self-Assembly of Peptide
@@ -227,10 +269,55 @@ Ahmadi S, et~al (2018) {Multiscale modeling of enzymes: QM-cluster, QM/MM, and
   QM/MM/MD: A tutorial review}. International Journal of Quantum Chemistry
   118(9):e25558
 
+\bibitem[{Shao et~al(2015)Shao, Gan, Epifanovsky, Gilbert, Wormit, Kussmann,
+  Lange, Behn, Deng, Feng, Ghosh, Goldey, Horn, Jacobson, Kaliman, Khaliullin,
+  Ku{\'{s}}, Landau, Liu, Proynov, Rhee, Richard, Rohrdanz, Steele, Sundstrom,
+  Woodcock, Zimmerman, Zuev, Albrecht, Alguire, Austin, Beran, Bernard,
+  Berquist, Brandhorst, Bravaya, Brown, Casanova, Chang, Chen, Chien, Closser,
+  Crittenden, Diedenhofen, DiStasio, Do, Dutoi, Edgar, Fatehi, Fusti-Molnar,
+  Ghysels, Golubeva-Zadorozhnaya, Gomes, Hanson-Heine, Harbach, Hauser,
+  Hohenstein, Holden, Jagau, Ji, Kaduk, Khistyaev, Kim, Kim, King, Klunzinger,
+  Kosenkov, Kowalczyk, Krauter, Lao, Laurent, Lawler, Levchenko, Lin, Liu,
+  Livshits, Lochan, Luenser, Manohar, Manzer, Mao, Mardirossian, Marenich,
+  Maurer, Mayhall, Neuscamman, Oana, Olivares-Amaya, O'Neill, Parkhill,
+  Perrine, Peverati, Prociuk, Rehn, Rosta, Russ, Sharada, Sharma, Small, Sodt,
+  Stein, St{\"{u}}ck, Su, Thom, Tsuchimochi, Vanovschi, Vogt, Vydrov, Wang,
+  Watson, Wenzel, White, Williams, Yang, Yeganeh, Yost, You, Zhang, Zhang,
+  Zhao, Brooks, Chan, Chipman, Cramer, Goddard, Gordon, Hehre, Klamt, Schaefer,
+  Schmidt, Sherrill, Truhlar, Warshel, Xu, Aspuru-Guzik, Baer, Bell, Besley,
+  Chai, Dreuw, Dunietz, Furlani, Gwaltney, Hsu, Jung, Kong, Lambrecht, Liang,
+  Ochsenfeld, Rassolov, Slipchenko, Subotnik, {Van Voorhis}, Herbert, Krylov,
+  Gill, and Head-Gordon}]{Shao2015}
+Shao Y, et~al (2015) {Advances in molecular quantum chemistry contained in the
+  Q-Chem 4 program package}. Molecular Physics 113(2):184--215
+
+\bibitem[{Kleinjung and Fraternali(2014)}]{Kleinjung2014}
+Kleinjung J, and Fraternali F (2014) {Design and application of implicit
+  solvent models in biomolecular simulations}. Current Opinion in Structural
+  Biology 25:126--134
+
 \bibitem[{Fraternali and van Gunsteren(1996)}]{Fraternali1996}
 Fraternali F, and van Gunsteren W (1996) {An Efficient Mean Solvation Force
   Model for Use in Molecular Dynamics Simulations of Proteins in Aqueous
   Solution}. Journal of Molecular Biology 256(5):939--948
+
+\bibitem[{Kleinjung et~al(2003)Kleinjung, Fraternali, Martin, and
+  Bayley}]{Kleinjung2003}
+Kleinjung J, et~al (2003) {Thermal unfolding simulations of apo-calmodulin
+  using leap-dynamics}. Proteins: Structure, Function, and Bioinformatics
+  50(4):648--656
+
+\bibitem[{Kleinjung et~al(2012)Kleinjung, Scott, Allison, van Gunsteren, and
+  Fraternali}]{Kleinjung2012}
+Kleinjung J, et~al (2012) {Implicit Solvation Parameters Derived from Explicit
+  Water Forces in Large-Scale Molecular Dynamics Simulations}. Journal of
+  Chemical Theory and Computation 8(7):2391--2403
+
+\bibitem[{Fornili et~al(2012)Fornili, Autore, Chakroun, Martinez, and
+  Fraternali}]{Fornili2012}
+Fornili A, et~al (2012) {Protein–Water Interactions in MD Simulations:
+  POPS/POPSCOMP Solvent Accessibility Analysis, Solvation Forces and Hydration
+  Sites}. Springer, New York, NY, pp 375--392
 
 \bibitem[{Zhu et~al(2005)Zhu, Alexov, and Honig}]{Zhu2005}
 Zhu J, Alexov E, and Honig B (2005) {Comparative Study of Generalized Born
@@ -267,6 +354,12 @@ Torrie G, and Valleau J (1977) {Nonphysical sampling distributions in Monte
 Kirkpatrick S, Gelatt CD, and Vecchi MP (1983) {Optimization by Simulated
   Annealing}. Science 220(4598):671--680
 
+\bibitem[{Pandini et~al(2012)Pandini, Fornili, Fraternali, and
+  Kleinjung}]{Pandini2012}
+Pandini A, et~al (2012) {Detection of allosteric signal transmission by
+  information-theoretic analysis of protein dynamics}. The FASEB Journal
+  26(2):868--881
+
 \bibitem[{Chakroun et~al(2013)Chakroun, Fornili, Prigent, Kleinjung, Dreiss,
   Rezaei, and Fraternali}]{Chakroun2013}
 Chakroun N, et~al (2013) {Decrypting Prion Protein Conversion into a
@@ -278,6 +371,17 @@ Chakroun N, et~al (2013) {Decrypting Prion Protein Conversion into a
 Collu F, et~al (2018) {Probing the early stages of prion protein (PrP)
   aggregation with atomistic molecular dynamics simulations}. Chemical
   Communications 54(57):8007--8010
+
+\bibitem[{{De Simone} et~al(2005){De Simone}, Dodson, Verma, Zagari, and
+  Fraternali}]{DeSimone2005}
+{De Simone} A, et~al (2005) {Prion and water: tight and dynamical hydration
+  sites have a key role in structural stability.} Proceedings of the National
+  Academy of Sciences of the United States of America 102(21):7535--40
+
+\bibitem[{{De Simone} et~al(2006){De Simone}, Dodson, Fraternali, and
+  Zagari}]{DeSimone2006}
+{De Simone} A, et~al (2006) {Water molecules as structural determinants among
+  prions of low sequence identity}. FEBS Letters 580(10):2488--2494
 
 \bibitem[{Sengupta et~al(2019)Sengupta, Carballo-Pacheco, and
   Strodel}]{Sengupta2019}
@@ -366,5 +470,45 @@ Khalid S, Piggot TJ, and Samsudin F (2019) {Atomistic and Coarse Grain
   Sansom}]{Fowler2016}
 Fowler PW, et~al (2016) {Membrane stiffness is modified by integral membrane
   proteins}. Soft Matter 12:7792
+
+\bibitem[{van Gunsteren et~al(2008)van Gunsteren, Dolenc, and
+  Mark}]{VanGunsteren2008}
+van Gunsteren WF, Dolenc J, and Mark AE (2008) {Molecular simulation as an aid
+  to experimentalists}. Current Opinion in Structural Biology 18(2):149--153
+
+\bibitem[{Gon{\c{c}}alves et~al(2013)Gon{\c{c}}alves, Dreyer, Lupieri,
+  Barrera-Pati{\~{n}}o, Ippoliti, Webb, Corrie, and Carloni}]{Goncalves2013}
+Gon{\c{c}}alves MB, et~al (2013) {Structural prediction of a rhodamine-based
+  biosensor and comparison with biophysical data}. Phys Chem Chem Phys
+  15(6):2177--2183
+
+\bibitem[{Mei{\ss}ner et~al(2014)Mei{\ss}ner, Schneider, Schiffels, and
+  {Colombi Ciacchi}}]{Meissner2014}
+Mei{\ss}ner RH, et~al (2014) {Computational Prediction of Circular Dichroism
+  Spectra and Quantification of Helicity Loss upon Peptide Adsorption on
+  Silica}. Langmuir 30(12):3487--3494
+
+\bibitem[{Bernardi et~al(2015)Bernardi, Melo, and Schulten}]{Bernardi2015}
+Bernardi RC, Melo MCR, and Schulten K (2015) {Enhanced sampling techniques in
+  molecular dynamics simulations of biological systems.} Biochimica et
+  biophysica acta 1850(5):872--7
+
+\bibitem[{Best et~al(2005)Best, Clarke, and Karplus}]{Best2005}
+Best RB, Clarke J, and Karplus M (2005) {What Contributions to Protein
+  Side-chain Dynamics are Probed by NMR Experiments? A Molecular Dynamics
+  Simulation Analysis}. Journal of Molecular Biology 349(1):185--203
+
+\bibitem[{Barducci et~al(2010)Barducci, Bonomi, and Parrinello}]{Barducci2010}
+Barducci A, Bonomi M, and Parrinello M (2010) {Linking Well-Tempered
+  Metadynamics Simulations with Experiments}. Biophysical Journal
+  98(9):L44--L46
+
+\bibitem[{Barducci et~al(2011)Barducci, Bonomi, and Parrinello}]{Barducci2011}
+Barducci A, Bonomi M, and Parrinello M (2011) {Metadynamics}. Wiley
+  Interdisciplinary Reviews: Computational Molecular Science 1(5):826--843
+
+\bibitem[{Mills and Andricioaei(2008)}]{Mills2008}
+Mills M, and Andricioaei I (2008) {An experimentally guided umbrella sampling
+  protocol for biomolecules.} The Journal of chemical physics 129(11):114101
 
 \end{thebibliography}
