@@ -44,13 +44,13 @@
 
 \begin{document}
 
-\title*{Molecular simulations of biomolecules: parametrisation and environment}
+\title*{Molecular simulations of biomolecules: some useful guidelines}
 \titlerunning{Molecular simulations of biomolecules}
 \author{Irene Marzuoli and Franca Fraternali}
 % Use \authorrunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
-\institute{Irene Marzuoli \at Randall Center of Cell and Molecular Biophysics, King's College London, UK \email{irene.marzuoli@kcl.ac.uk}
-\and Franca Fraternali \at Randall Center of Cell and Molecular Biophysics, King's College London, UK \email{franca.fraternali@kcl.ac.uk}}
+\institute{Irene Marzuoli \at Randall Center for Cell and Molecular Biophysics, King's College London, UK \email{irene.marzuoli@kcl.ac.uk}
+\and Franca Fraternali \at Randall Center for Cell and Molecular Biophysics, King's College London, UK \email{franca.fraternali@kcl.ac.uk}}
 %
 % Use the package "url.sty" to avoid
 % problems with special characters
@@ -58,27 +58,24 @@
 %
 \maketitle
 
-\abstract*{Molecular Dynamics simulations are an established techniques to investigate molecular details of biophysical processes. In this chapter, we give a brief introduction to the theory and implementation of a Molecular Dynamic simulation, highlighting the different models and algorithms that have been developed to tackle specific problems, with a special focus on classical force fields. Some examples of how simulations have bee used in the past will help the reader in discerning their power, limitations and significance.}
+\abstract{In studying biological processes and focusing on the molecular mechanisms at the basis of these, Molecular Dynamics simulations(MD) have demonstrated to be a very useful tool for the past 50 years. This suite of computational methods calculates the time dependent evolution  of a molecular system using physics-based first principles. In this chapter, we give a brief introduction to the theory and practical use of Molecular Dynamics simulations, highlighting the different models and algorithms that have been developed to tackle specific problems, with a special focus on classical force fields. Some examples of how simulations have been used in the past will help the reader in discerning their power, limitations and significance.}
 
-\abstract{Molecular Dynamics simulations are an established techniques to investigate molecular details of biophysical processes. In this chapter, we give a brief introduction to the theory and implementation of a Molecular Dynamic simulation, highlighting the different models and algorithms that have been developed to tackle specific problems, with a special focus on classical force fields. Some examples of how simulations have bee used in the past will help the reader in discerning their power, limitations and significance.}
 
 \section{Introduction}
 
-Molecular Dynamics simulations is a computational method which has gained popularity and significance in the past few decades to help the understanding of biophysical systems.
+Molecular Dynamics simulations have been rightly defined as the `Computational Microscope' \cite{Lee2009,Dror2012} as they offer otherwise inaccessible insights into the molecular details underlying conformational changes of proteins and nucleic acids. Computational methods and tools based on MD are routinely applied in structural biology to quantitatively characterise the dynamics and thermodynamics of proteins and their complexes. The increasing computational power available, and the flexibility of the algorithms for implementation on different platforms, have made possible to access molecular dynamical properties inaccessible to experiments. These techniques and the associated force fields are also commonly used in the process of structure determination from NMR data and theoretical structure prediction \cite{Vogel2017,Heo2018}.
 %
-The accumulation of data from experiments on biomolecular processes, and the increasing computational power available, have made possible to implement theoretical models of these systems which can be simulated on a computer, to access molecular dynamical properties inaccessible to experiments.
-
-Modelling and simulating a biological system consists in describing its components and their mutual interactions, and implementing the laws of physics to reproduce its natural evolution. In principle, a quantum mechanic description of the system is needed but, to facilitate the task, several simplified models have been devised, each most suitable to investigate particular cases.
+Modelling and simulating a biological system consists in describing its components and their mutual interactions, and implementing the laws of physics to reproduce its natural evolution. A quantum mechanic description of the system would be more accurate but expensive to achieve for large systems. To facilitate the task, several simplified models have been devised, each most suitable to investigate particular cases.
 %
-In particular, a large class of models focuses on a classical mechanics description of the dynamics: for increasing sizes of the systems and longer time spans described, the classical approximations will be more and more accurate, and also the only possible representation computationally affordable.
+In particular, a large class of models focuses on a classical mechanics description of the dynamics: for increasing sizes of the systems and longer time spans described, the classical approximations will be more than accurate, and also the only possible representation computationally affordable.
 
-Understanding the methodology of classical Molecular Dynamics (MD) provides the interpretative key with which simulations must be designed, run and interpreted in each specific case.
+Understanding the methodology of classical Molecular Dynamics (MD) provides the interpretative key with which simulations must be designed, run and interpreted in each specific case. We offer here some general background and directions on which are the used algorithms and their applicability in some selected scenarios that we consider representative and challenging.
 
 
 \section{Materials}
 
-\subsection{The evolution algorithm}
-In a classical MD framework, Newton's second law of motion rules the dynamics, stating that the acceleration $\textbf{a}$ that a particle is subject to at time $t$, depend on the total force $\textbf{F}$ acting on the particle itself and on its mass $m$ (bold denotes vectorial quantities):
+\subsection{Extracting the Dynamics of a Molecular System: the Time Evolution Algorithm}
+In a classical MD framework, Newton's second law of motion rules the dynamics, stating that the acceleration $\textbf{a}$ that a particle is subject to at time $t$, depends on the total force $\textbf{F}$ acting on the particle itself and on its mass $m$ (bold denotes vectorial quantities):
 \begin{equation} \label{eq:newton}
 \textbf{F}(t) =  m \cdot \textbf{a}(t) \, .
 \end{equation}
@@ -92,39 +89,25 @@ In the case of complex biomolecular systems with many particles and multiple int
 The idea is to consider very short time steps of length $\Delta t$, so that in such intervals the forces are (almost) constant, and the integration of Equation \ref{eq:analytical} becomes trivial.
 %
 A careful choice of the values to integrate allows to reduce the approximations derived from such approach.
-For example, choosing the velocity value at time $t_0 + \Delta t/2$ (and not at $t_0$) decreases the error down to orders of $(\Delta t)^4$ (rather than $(\Delta t)^2$), producing the so-called leap-frog algorithm, which is used in the vast majority of MD engines:
+For example, choosing the velocity value at time $t_0 + \Delta t/2$ (and not at $t_0$) decreases the error down to orders of $(\Delta t)^4$ (rather than $(\Delta t)^2$). This framework is at the basis of the so-called leap-frog algorithm, which is used in the vast majority of MD engines:
 \begin{eqnarray}
 \mathbf{v}\left(t_0 + \frac{\Delta t}{2}\right) &=& \mathbf{v}\left(t - \frac{\Delta t}{2}\right) + \frac{\mathbf{F}(t)}{m} \, \Delta t \, ; \\
 \mathbf{r}(t_0 + \Delta t) &=& \mathbf{r}(t_0) + \mathbf{v}\left(t_0 + \frac{\Delta t}{2}\right) \, \Delta t \, .
 \end{eqnarray}
 This algorithm can thus ``solve" every possible Newton equation, at the expenses of some precision.
 
-%\begin{eqnarray} \label{eq:euler}
-%\mathbf{v}(t_0 + \Delta t) &=& \mathbf{v}(t_0) + \frac{\mathbf{F}(t)}{m} \, \Delta t \,; \\
-%\mathbf{r}(t_0 + \Delta t) &=& \mathbf{r}(t_0) + \mathbf{v}(t_0) \, \Delta t + \frac{\mathbf{F}(t)}{m} \, \Delta t^2 \,. \label{eq:euler2}
-%\end{eqnarray}
-%This procedure of updating positions and velocities, the Euler algorithm, contains approximations (of the order of $(\Delta t)^2$) that will accumulate step after step. It is possible to improve this accuracy opting for different integration procedure, for example varying the choice of the velocity to be integrated during each time step can improve the accuracy.
-%Taking its value at time $t_0 + \Delta t/2$ (rather than $t_0$ as in Equations \ref{eq:euler} and \ref{eq:euler2}), produces the so called leap-frog algorithm with an improved accuracy of the order of $(\Delta t)^4$:
-%\begin{eqnarray}
-%\mathbf{v}\left(t_0 + \frac{\Delta t}{2}\right) &=& \mathbf{v}\left(t - \frac{\Delta t}{2}\right) + \frac{\mathbf{F}(t)}{m} \, \Delta t \, ; \\
-%\mathbf{r}(t_0 + \Delta t) &=& \mathbf{r}(t_0) + \mathbf{v}\left(t_0 + \frac{\Delta t}{2}\right) \, \Delta t \, .
-%\end{eqnarray}
-
 \subsection{Thermostats and barostats: rescuing the approximation limit}
-As the integration procedure is not exact, specific algorithms have been developed to alleviate the influence of the approximations and reproduce the simulation conditions of choice.
-
-\textbf{[REMOVE?] First, some bonds in the molecules are constrained to a particular length or angle. To ensure this property, after the update of all the atoms positions, a constraint algorithm is applied to bring the positions of mutually constrained atoms back to a value which satisfies the constraint. Several algorithms have been developed to do so, among which is LINCS (Linear Constraint Solver) \cite{Hess1997}. As the problem of constraints is hardly solvable analytically, LINCS proceeds iteratively, finding the best solution within an approximation tolerance. 
-On the contrary, the SETTLE algorithm \cite{Miyamoto1992} implements an exact solution to the constraint problem for rigid bodies of three elements, as the one of water in its atomistic description, for which it is usually employed.}
+As the integration procedure is not exact, specific algorithms have been developed to compensate for the necessary approximations and to more realistically reproduce the simulation's conditions of choice, for example Temperature and Pressure.
 
 Most experiments are conducted under constant temperature, so that it is desirable to reproduce this condition in simulations.
 %
 To set up a temperature, at the beginning of the simulations particles can be given random initial velocities distributed according to the Maxwell-Boltzmann curve, which describe velocities of atoms of a noble gas at temperature $T$. The velocity of each of them will be influenced by the specific interactions occurring in the system but, in a constant temperature environment, the total average kinetic energy (proportional to $T$) must remain constant.
 %
-Even in absence of any dissipative term in the dynamics, the approximations performed in the MD algorithm makes this quantity drift away from its initial value, therefore to ensure temperature is maintained throughout the simulation, thermostat algorithms have been devised.
+Even in absence of any dissipative term in the dynamics, the approximations performed in the MD algorithm make this quantity to drift away from its initial value, therefore to ensure temperature is maintained throughout the simulation, thermostat algorithms have been devised.
 
 The principle behind a thermostat consists in rescaling the velocity of one or few selected particles at fixed interval of times, to restore the correct average kinetic energy. This fixed interval of time must not correspond to the timestep itself, as the goal of a thermostat is to maintain the average temperature, and not its value at all times, as fluctuations are allowed in natural systems.
 %
-Moreover, it is strongly recommended to couple solute and solvent to two separate baths, to ensure that both maintain the correct temperature. Indeed, it is possible that biases in the parameterisation favour an energy flow from one component to the other. In this case, as the thermostat chooses at random a few particles to rescale their velocity, it is much more likely to select solvent ones, leaving the solute in its state incorrect temperature, if it is thermally coupled together with the solvent.
+Moreover, it is strongly recommended to couple solute and solvent to separate baths, to ensure that both maintain the correct temperature. Indeed, it is possible that the energy exchanged between solute and water (or other components) is not perfect, due to different conditions adopted for their simulations, like cut-offs or restraints.
 %
 The most used thermostat algorithms are the Berendsen \cite{Berendsen1984}, Nos\'{e}-Hoover \cite{Nose1983,Hoover1985}, Andersen \cite{Andersen1980} and velocity rescale \cite{Bussi2007}, which differ in the quantities selected for such rescaling.
 
@@ -132,13 +115,13 @@ Another macroscopic condition one wish to maintain is either the volume or the p
 %
 Pressure is directly proportional to the average quantity of motion exchanged between the particles and the walls of the box they are confined to, which depends on the frequency of collision and thus on the extent of the box. Barostats change the box size to regulate the pressure.
 %
-To be noticed that most MD simulations are run under periodic boundary conditions, i.e. a particle which exits from the simulation box during a move is brought back on the opposite side. This mimics the presence of an infinite number of equivalent boxes one next to the other, to alleviate the finite size effects that arise when simulating small systems.
+It has to be noticed that most MD simulations are run under periodic boundary conditions, i.e. a particle which exits from the simulation box during a move is brought back on the opposite side of the box, leaving the box density constant. This mimics the presence of an infinite number of equivalent boxes one next to the other, and alleviates the finite size effects that arise when simulating small systems.
 %
 In this scenario, particles are not bouncing on the box walls, rather a virtual pressure is computed from the velocities of the ones trespassing the box boundaries during a move.
 %
-Similarly as for thermostats, the coupling frequency of barostats must be larger than the time step. Moreover, usually all the box dimensions are rescales by the same amount. However, in the case of anisotropic systems like lipids patches, the directions parallel to the membrane plane can be rescaled separately with respect to the one perpendicular, to maintain the correct pressure in each of them.
+Similarly as for thermostats, the coupling frequency of barostats must be larger than the time step. Usually all the box dimensions are rescaled by the same amount. However, in the case of anisotropic systems like lipids, to maintain the correct pressure, the directions parallel to the membrane plane can be rescaled separately with respect to the one perpendicular to it.
 %
-Also for pressure coupling several algorithms can used: the Berendsen \cite{Berendsen1984},
+Also for pressure coupling several algorithms can be used: the Berendsen \cite{Berendsen1984},
 %barostat approaches the correct pressure value with an exponential behaviour and it is recommended in equilibration phases to promptly relax the initial conditions which can be well off the desired value. However it does not produce the exact NPT ensemble.
 Parrinello-Rahman \cite{Parrinello1981},
 %instead equilibrates the pressure with an oscillatory behaviour, is suggested for the production phase and does produce a correct ensemble.
@@ -193,31 +176,35 @@ The treatment of non-bonded interactions requires particular care because of the
 %
 The van der Waals forces decay fast, therefore the tail of their functional can be cut after a threshold distance with little impact on the outcome; while Coulomb interactions, with their slower decay, must be taken into account throughout the whole simulation box. Many algorithms have been devised to efficiently compute them, like the Particle Mesh Ewald \cite{Essmann1995} or the Reaction Field \cite{Tironi1995} approaches. 
 
-Finally, all biomolecular force field, and in particular their van der Waals interactions, are parametrised to describe systems at room temperature, therefore simulations performed at substantially different temperatures must be interpreted carefully.
+Finally, all biomolecular force fields, and in particular their van der Waals interactions, are parametrised to describe systems at room temperature, therefore simulations performed at substantially different temperatures must be interpreted carefully.
 
 
 \subsubsection{Force fields: classifications} \label{sec:ff_ex}
+
+\begin{figure}[p!]
+\centering
+\includegraphics[scale=.65]{picture_chapter}
+%
+\caption{List of most popular simulation force field for biomolecules, ordered from detailed to coarse (reference to the relative papers in Section \ref{sec:ff_ex}). On the left, snapshot of notable systems simulated with the force fields CHARMM (adapted with permission from \cite{Lipkin2017}. Copyright (2017) American Chemical Society); GROMOS (adapted with permission from \cite{Macpherson2019}); SIRAH (adapted with permission from \cite{Machado2017}. Copyright (2017) American Chemical Society) and MARTINI (adapted with permission from \cite{Samsudin2017}). Copyright (2017) Elsevier).}
+\label{fig:ff}
+\end{figure}
+
+
 Many force fields for classical MD simulations adopt a functional form equal or similar to the one described above. Their difference lies in the number of degrees of freedom modelled, in a hierarchy of descriptions proceeding from detailed to coarse  (Figure \ref{fig:ff}). Three possible classes of descriptions are:
 \begin{itemize}
-\item all-atoms force fields, where all the atoms are presented in the description, and represented as spheres of variable size according to their van der Waals radius (e.g. proportional to $\sigma$ in a Lennard-Jones model). Examples of all-atoms force fields are AMBER \cite{Maier2015}, CHARMM \cite{MacKerell1998,Klauda2010} and OPLS all-atom \cite{Jorgensen1988}.
+\item all-atoms force fields, where all the atoms are presented in the description, and represented as spheres of variable size according to their van der Waals radius (e.g. proportional to $\sigma$ in a Lennard-Jones model). Examples of all-atoms force fields are AMBER \cite{Maier2015,Dickson2014,Wang2004_amber}, CHARMM \cite{MacKerell1998,Klauda2010,Huang2013} and OPLS all-atom \cite{Jorgensen1988}.
 \item united atoms force fields, similar to the previous ones but where non-polar hydrogens are incorporated in the heavy atom they are bonded to. The ``united atom" is given a new $\sigma$ parameter and increased mass according to how many hydrogen it includes. The GROMOS force field \cite{Oostenbrink2004,Schmid2011} follows this philosophy. The OPLS force field has also a united atom version \cite{Jorgensen1996}.
 \item coarse grain force fields, which group together in one unique bead few atoms, to reduce the number of variables to compute. The clustered atoms are such that their mutual distances are expected to vary little with respect to the ample movements of components of the system far away from each other (which will be grouped in different beads). The MARTINI \cite{Marrink2007,Monticelli2008,DeJong2013} and SIRAH \cite{Machado2018,Barrera2019} force fields belong to this category.
 \end{itemize}
 %
 We now give a more detailed insight in the characteristics and parametrisation strategies an atomistic and a coarse grain force field among the ones mentioned.
 
-\begin{figure}[p!]
-\centering
-\includegraphics[scale=.65]{picture_chapter}
-%
-\caption{List of most popular simulation force field for biomolecules, ordered from detailed to coarse (reference to the relative papers in Section \ref{sec:ff_ex}). On the left, snapshot of notable systems simulated with the force fields CHARMM (adapted with permission from \cite{Lipkin2017}. Copyright (2017) American Chemical Society); GROMOS (adapted with permission from \cite{Macpherson2019}); SIRAH (adapted with permission from \cite{Machado2017}. Copyright (2017) American Chemical Society) and MARTINI (adapted with permission from \cite{Samsudin2017}).   Copyright (2017) Elsevier).}
-\label{fig:ff}
-\end{figure}
+
 
 \subsubsection{The GROMOS force field}
 All-atoms and united atoms force field are parametrised against experimental values.
 %
-While for the all-atom force fields AMBER and CHARMM the parametrisation is based on quantum mechanics calculations, the united atom GROMOS force field relies on the reproduction of free enthalpies of solvation and heat of vaporization of small molecules at physiological temperatures and pressures.
+While for the all-atom force fields AMBER and CHARMM the parametrisation is based on ab initio quantum mechanics calculations, refined against experimental data if needed \cite{Maier2015,Dickson2014,Wang2004_amber,MacKerell1998,Klauda2010}, the united atom GROMOS force field relies on the reproduction of free enthalpies of solvation and heat of vaporization of small molecules at physiological temperatures and pressures \cite{Oostenbrink2005,Schmid2011,Reif2013}.
 %
 This procedure sets not only the constant of the bonded interactions, but also the partial charges of the atoms inside a molecule: as no electrons are included for the sake of efficiency, their redistribution across atoms which are bonded is modelled through fractional charges assigned to each atom (while the total charge of a molecule must sum to an integer).
 %
@@ -239,13 +226,13 @@ The only exception is represented by rings molecules, where a two-to-one approac
 
 Two approaches are possible develop a coarse grain description: parameters can be fit directly to global quantities derived from experiments, in a top-down approach as the one followed in GROMOS; or fitting the coarse-grain simulations results to the ones from atomistic simulations, in a bottom-up approach.
 %
-The MARTINI force field chooses a top-down approach to parametrise non-bonded interactions, tuning them against experimental partitioning free energies between polar and apolar phases, while bonded interactions are derived from reference all-atom informations, in a bottom-up approach.
+The MARTINI force field chooses a top-down approach to parametrise non-bonded interactions, tuning them against experimental partitioning free energies between polar and apolar phases, while bonded interactions are derived from reference all-atom information, in a bottom-up approach.
 
 The four-to-one mapping implies that the amino acid backbone is represented by one bead only, preventing the description of directional bonds which are key to reproduce the secondary structure. The bonded parameters partially account for this, favouring for each residue type the backbone conformation in which it is most likely found (as computed from the Protein Data Bank - PDB \cite{PDB}). When this is not sufficient, the protein can be constrained around a given structure through an elastic network model approach (ElNeDyn \cite{Periole2009}). However, both the backbone parametrisation and the use of ElNeDyn imply that conformational changes in the structure are penalised and therefore not well sampled in MARTINI simulations.
 
 The MARTINI force field provides two water model. The standard one groups four water molecules in one bead only, loosing the polarisability typical of water molecules, the effect of which is partially restored with the use of a high dielectric constant. The polarisable water model \cite{Yesylevskyy2010} maps instead four water molecule to a single ``inflated" water, i.e.\ a three-beads molecule with the same shape of a single molecule, but expanded, and a charge splitting which can account for the water dipole.
 
-\runinhead{Backmapping techniques} Coarse-grain descriptions are very effective in reproducing long time scales; however, to retrieve finer details after such extensive exploration, backmapping techniques have been designed to obtain atomistic configurations from the coarse-grain ones. The easy transfer between the two resolution, gave rise to many multi scale studies applied to biomolecular systems \cite{Lee2012}.
+\runinhead{Backmapping techniques} Coarse-grain descriptions are very effective in reproducing long time scales; however, to retrieve finer details after such extensive exploration, backmapping techniques have been designed to obtain atomistic configurations from the coarse-grain ones \cite{Wassenaar2015}. The easy transfer between the two resolution, gave rise to many multiscale studies applied to biomolecular systems \cite{Lee2012}.
 
 
 \subsection{Beyond a classical atomistic framework} 
@@ -254,28 +241,29 @@ Without entering into the details, we want to bring to the reader attention two 
 
 Regarding the accuracy of simulations, it must be noticed that none of the force field mentioned above takes into account polarisability, i.e. the displacement of electrons with respect to the nucleus, as a consequence of the surrounding electrostatic environment, because electrons and nucleus of an atom are modelled as a unique object. Specific force fields have been modelled to include this effect, on top of atomistic descriptions, as in the AMOEBA \cite{Ren2003,Ponder2010}, Drude polarisable CHARMM \cite{Anisimov2004} or AMBERff02 \cite{Cieplak2001}, or on coarse grain descriptions, as in the ELBA force field \cite{Orsi2011}. Polarisability does improve the accuracy of simulations, but it can significantly slow down simulations.
 %
-\textbf{[REMOVE?] Further beyond the classical approximation, for biological processes governed by quantum mechanics - such as photosynthesis, DNA mutation processes or some enzymatic activities - many semi classical hybrid techniques have been developed, to gain the accuracy of a quantum description in the region of interest and the speed up of a classical one in the surrounding areas \cite{Ahmadi2018}.}
+Going beyond the classical approximation, for biological processes governed by quantum mechanics - such as photosynthesis, DNA mutation processes or some enzymatic activities - many semi classical hybrid techniques have been developed, to gain the accuracy of a quantum description in the region of interest and the speed up of a classical one in the surrounding areas \cite{Ahmadi2018}. 
 
-Tackling instead efficiency issues, an implicit solvent model can be used to speed up simulations. The solvent is represented as a continuous medium, as opposed to explicit models which include all its particles.
+Tackling instead efficiency issues, an implicit solvent model can be used to speed up simulations. The solvent is represented as a continuous medium, as opposed to explicit models which include all its particles \cite{Kleinjung2014}.
 % In this situation the description of the solute is usually, but not necessarily, atomistic as the speed up gained by this solvent parametrisation allows a very detailed description for it.
 %
-Models of implicit solvent can be based on different assumptions: for example the solute-solvent interactions can be taken as proportional to the solvent-accessible surface area (SASA) of every particle of solute \cite{Fraternali1996}, or instead can be derived from a solution of the Poisson-Boltzmann equation governing the charge density in a material, for example in the form of the Generalised Born equation \cite{Zhu2005} which is valid under particularly simple conditions.
+Models of implicit solvent can be based on different assumptions: for example the solute-solvent interactions can be taken as proportional to the solvent-accessible surface area (SASA) of every particle of solute \cite{Fraternali1996,Kleinjung2003,Kleinjung2012,Fornili2012}, or instead can be derived from a solution of the Poisson-Boltzmann equation governing the charge density in a material, for example in the form of the Generalised Born equation \cite{Zhu2005} which is valid under particularly simple conditions.
 %
 Another speed up technique is constituted by hybrid particle-field algorithms. The idea is to treat non-bonded interactions through a mean field approach, where atoms/beads move in the field generated by the others. The field does not need to be updated at every time step, as it is a collective and thus slowly evolving variable; moreover, for each particle only the interaction with the field, and not with all the neighbour particles needs to be computed, reducing the computations effort further. This approach has been employed with a coarse grain description of polymers and biological molecules in the OCCAM software \cite{Milano2009}.
 
 Finally, further strategies are possible to enhance the sampling performed by a simulation in the case that the one obtained by the natural evolution of the system would exceed the computational time available. As a non comprehensive list of these techniques, we mention replica-exchange algorithms \cite{Okamoto2004} which combine together multiple simulations held at different conditions, local potential-energy elevation (or metadynamics) \cite{Huber1994,Laio2002} which avoids the re-sampling of already visited conformations adding an energy penalty to them, umbrella sampling \cite{Torrie1977} which reconstructs free-energy barriers from simulations held at specific values of the coordinate along which the barrier exists, or finally simply the use of higher temperature to overcome energy barriers \cite{Kirkpatrick1983}.
-
 
 \subsection{System setup}
 To set up a simulation, the desired resolution, i.e. force field, must be chosen according to the system to simulate. A few examples on this will be given in Section \ref{sec:methods}; however, for any choice of parameters, some common ``ingredients" and steps are necessary to prepare the system:
 \begin{itemize}
 \item \textbf{structural file}: a pdb file (or any structural file format suitable with the MD engine of choice) which contains only the elements to be simulated, with a correct format of names and positions. The choice of the initial conformation is particularly important, especially for atomistic resolution, which is likely to sample conformations in the vicinity of the initial position if it possible to simulate only a short time scale.
 \item \textbf{topology file}: given a structural file, every MD engine has dedicated commands to retrieve the list of parameters for bonded atoms. The presence of exotic residues or non standard network of bonds might need case-to-case manual parametrisation.
-\item \textbf{simulation box}: for simulations of a protein, it is good practice to place it within a box large enough to avoid interference of the protein with its periodic images, for example allowing a minimum distance between protein and box of at least the cut-off chosen for non-bonded interactions. However, it must be considered that the protein might extend during the simulation. In the case of lipids instead, to reproduce an infinite membrane and account for lateral tension, the box can be chosen exactly as big as the membrane patch (in the directions parallel to its plane), so that periodic images merge together.
+\item \textbf{simulation box}: for simulations of a protein, it is good practice to place it within a box large enough to avoid interference of the protein with its periodic images, for example allowing a minimum distance between protein and box of at least the cut-off chosen for non-bonded interactions. However, it must be considered that the protein might adopt extended conformations extend during the simulation, therefore one should find a compromise between the needed box size and the effective number of particles to calculate.
+%
+In the case of lipids instead, to reproduce an infinite membrane and account for lateral tension, the box can be chosen exactly as big as the membrane patch (in the directions parallel to its plane), so that periodic images merge together.
 \item \textbf{solvation}: the prepared box is filled with molecules of the water model of choice, except in the spaces already occupied by the solute.
 \item \textbf{ions}: ions are added in replacement of a suitable number of water molecules to neutralise the charge of the system. Additional ones can be added to reach the experimental ion concentration (though there will be a slight imbalance between the positive and negative species due to the counter ions already added).
-\item \textbf{energy minimisation}: the system prepared according to the steps above might have several atom clashes. This can derive from the initial protein/membrane structure, or from imperfect packing of the solvent around the solute. To alleviate this, an energy minimisation is performed prior to the dynamical run. Usually, one iteration is performed restraining the solute, to relax solvent positions, and then a second one with free solute.
-\item \textbf{equilibration}: even after energy minimisation, the system prepared is far away from the ideal equilibrium configuration. For this reason, several rounds of simulations with specific conditions are run before the final production. The specific protocol depends on the system and the force field, however for proteins in solution it is quite common to start with NVT ensemble runs with position restraints at increasing temperatures, followed by NPT runs at the same temperatures but without restraints, and only then from the production. For lipid system, the ensemble is preferably always NPT to prevent penetration of water in the bilayer by shrinking the box if needed, thus only a temperature increase protocol is followed. In some cases, for example for the MARTINI force field with standard water, it is not possible to simulate low temperatures, thus the equilibration consists in a short production employing different thermostat and barostat with respect to the production. Indeed, some are more suitable for approaching efficiently the correct temperature or pressure value from a configuration far from equilibrium, while others for maintaining the correct ensemble. Generally, every force field provides validated equilibration procedures.
+\item \textbf{energy minimisation}: the system prepared according to the steps above might have several atom clashes. This can derive from the initial protein/membrane structure, or from imperfect packing of the solvent around the solute. To alleviate this, an energy minimisation is performed prior to the dynamical run. Usually, a protocol restraining the  the solute and letting relax solvent positions in the first instance, followed by a second run that releases the solute is used in these cases.
+\item \textbf{equilibration}: even after energy minimisation, the system prepared is far away from the ideal equilibrium configuration. For this reason, several rounds of simulations with specific conditions are run before the final production. The specific protocol depends on the system and the force field, however for proteins in solution it is quite common to start with NVT ensemble runs with position restraints at increasing temperatures, followed by NPT runs at the same temperatures but without restraints, and only then from the production. For lipid system, the simulated ensemble is preferably NPT to prevent penetration of water in the bilayer by unphysical shrinking the box. After this only a temperature increase protocol is followed. In some cases, for example for the MARTINI force field with standard water, it is not possible to simulate low temperatures, thus the equilibration consists in a short production employing different thermostat and barostat with respect to the production. Some of these protocols are more suitable for approaching efficiently the correct temperature or pressure value from a configuration far from equilibrium, while others for maintaining the correct ensemble properties. Generally, every force field is provided with validated equilibration procedures.
 \end{itemize}
 
 
@@ -285,17 +273,17 @@ One of the challenges of MD simulations consists in choosing the most suitable g
 \runinhead{Simulations of protein and their interactions}
 Simulations of protein have been crucial to understand small molecular details of their structure and functioning, which influence their macroscopic behaviour.
 
-A challenging subject in the field of enzymatic regulation is constituted by allosteric regulation, as the pathways involved are of difficult exploration. Molecular dynamics simulations can shed light on the residues responsible for transferring the information.
+A challenging subject in the field of enzymatic regulation is constituted by allosteric regulation, as the pathways involved are of difficult exploration. Molecular dynamics simulations can shed light on the residues responsible for transferring the information \cite{Pandini2012}.
 %
-Atomistic simulations of pre-assembled pyruvate kinase M2 (PKM2) tetramers elucidated the mechanism of allosteric activation by fructose 1,6-bisphosphate (FBP) \cite{Macpherson2019}: simulations of the apo and FBP bound tetramer does not show large conformational changes, however the correlated motions were extracted from both simulations and processed within a consistent information-theoretical framework, showing differences. This made possible to extract the position of some hubs, i.e. sets of amino acids, which were most influenced by the ligand presence and thus able to transport information. Such analysis necessarily requires an atomistic description as the signal comes form small modifications of the protein secondary structure which must then be accurately described.
-%
-The analysis proved that residues in regions with high backbone flexibility were more prone to have an allosteric role and allowed to designed mutants with improved response to the FBP activator and less sensibility to a L-phenylalanine inhibitor. 
+For example, atomistic simulations of pre-assembled pyruvate kinase M2 (PKM2) tetramers elucidated the mechanism of allosteric activation by fructose 1,6-bisphosphate (FBP) \cite{Macpherson2019}. In this work, the correlated motions extracted from simulations of the apo and FBP bound tetramer were processed within an information-theoretical framework, allowing for the extraction of specific residue hubs.  These were experimentally demonstrated to be responsible of the communication between ortosteric and allosteric pockets.
 
 Another particularly interesting concept explored by MD is the one of \emph{ensemble}: proteins adopt a variety of shapes in solution, which can differ significantly from the crystal-structures available. This flexibility is proven by techniques as small angle X-ray scattering (SAXS) or nuclear magnetic resonance (NMR), which results cannot been explained by a single-conformation scenario. As such, simulations can provide ``snapshots" of all these conformations and their mutual interchange.
 %
-Some of these changes are crucial for the protein function, as in the case of prions, proteins which become pathogenic under conversion from an $\alpha$-helix rich form to a $\beta$-sheet isoform which is prone to aggregation. Atomistic MD simulations showed the (reversible) unfolding of the protein between the two phases \cite{Chakroun2013}, starting from the helical crystal structure available. Moreover, they identified in the C-terminus region the trigger of the conformational change, corresponding to a region which is enriched in pathogenic mutations. The results were then used to investigate the aggregation process after the conversion, again identifying critical residues promoting it \cite{Collu2018}.
+Some of these changes are crucial for the protein function, as in the case of prions, proteins which become pathogenic under conversion from an $\alpha$-helix rich form to a $\beta$-sheet isoform which is prone to aggregation. 
+Atomistic MD simulations of the prion protein showed the (reversible) unfolding of the protein between the two structural states \cite{Chakroun2013}, starting from the helical crystal structure available. Moreover, they identified in the C-terminus region the trigger of the conformational change, corresponding to a region which is enriched in pathogenic mutations. The results were then used to investigate the aggregation process after the conversion, again identifying critical residues promoting it \cite{Collu2018}. 
+Interestingly, the water distribution density around the prion molecule was demonstrated to have a role in identifying possible spots prone to aggregation \cite{DeSimone2005,DeSimone2006}. Such examples show that one should consider the solvent, or the forces induced by the protein surrounding media, as an important determinant in the conformational equilibria and recognition processes.
 %
-A similar procedure applied to simpler amyloid forming peptides provided recently a map of all the relevant states of the assembly process \cite{Sengupta2019}, suggesting that the constant improvement of computational power will make this possible also for more complex systems like the prion in a near future.
+Assembly simulations applied to amyloid forming peptides has provided recently a map of all the relevant states of the assembly process \cite{Sengupta2019}, suggesting that the constant improvement of computational power will make this possible also for more complex systems like the prion in a near future.
 
 
 \runinhead{Simulations of model membranes} 
@@ -324,15 +312,20 @@ Similarly, the ability of coarse grain simulations to investigate very large sys
 
 Validation of MD simulations is performed by comparison with experiments: the same properties obtained experimentally are computed from the MD trajectory as well, and the two compared. If these are correctly reproduced, it is usually assumed that the simulation is sampling the correct ensemble of states and then one can identify in the simulation the determinants responsible for the experimental outcome of interest, which are not accessible by the experiment itself.
 
-The comparison however is not always easy: often the experimentally measured quantity is an average in time and/or space (for example Circular Dichroism spectra or SAXS profiles of a peptide in solution) and many different combinations of computationally derived structures can produce compatible results. Indeed, the experimental information is always limited in comparison with the more abundant one handled by MD simulations. This constitutes the strength of MD, but also prevents the validation of some findings.
+The comparison however is not always easy: often the experimentally measured quantity is an average in time and/or space (for example Circular Dichroism spectra or SAXS profiles of a peptide in solution) and many different combinations of computationally derived structure ensembles can produce compatible results. It is still challenging to compare experimentally derived ensembles and the ones derived by molecular simulations. Indeed the extracted average properties may be different, so it is important to understand which are the relevant properties playing a role in the measured ensemble before attempting comparisons.
 
-Thus, in the validation of MD outcomes, it is important to have a critical attitude both when the results agree and when they do not.
+Thus, in the validation of MD outcomes, it is important to have a critical attitude and to interpret the result within the validity of the approximation \cite{VanGunsteren2008}. Some apparently negative results may suggest or stimulate new experimental settings to validate the hypotheses one was set to test \cite{Goncalves2013,Meissner2014}.
 %
-Indeed, agreement may arise from either a simulation that reflects correctly the experimental system; but also when the property examined is insensitive to the details of the simulated trajectory and thus always agrees with experiments, or again from a compensation of errors, which happens more easily for systems with a high number of degrees of freedom.
+Indeed, agreement may arise from either a simulation that reflects correctly the experimental system; but also when the property examined is insensitive to the details of the simulated trajectory, or it can be a result of compensation of errors, which is more likely to  occur for systems with a high number of degrees of freedom.
 %
-Similarly, disagreement may hint at an error in the simulation (either in the model, the implementation or simply the simulation is not converged yet) or an error in the experiment (either in the result itself o its interpretation), so that both must be carefully checked to improve the agreement.
+Similarly, disagreement may hint at an error in the simulation (either in the model, the implementation, or simply the estimated simulation's convergence) or an error in the interpretation and/or conditions of experimental set-up (either in the result itself o its interpretation), so that both must be carefully checked to improve a convergence in the agreement.
 
-Finally, simulations still suffer from the limited computational time available: most of the times, the real experimental system is simply too large to be reproduced and the time scale of the process too long. Simulations are thus confined to explore a restricted space, implying that the initial conditions must be chosen carefully to optimise the search and avoid any bias which might persist for the whole length of the simulation. The use of enhanced MD techniques can increase the sampling abilities, however it introduces a bias which must be removed or properly accounted for in the interpretation of the results. Finally, the force field used are far from optimal: partly because they rely on approximate functional forms, and partly because it is difficult to find experimental observables measured with the desired resolution to set the parameters, it is not unusual to see different descriptions providing disagreeing outcomes, which still all match the experimental results. This prompts at the set up of new experiment which can properly discriminate the best description, but at the same time highlights once more how only the resolution provided by simulations can disclose the fine details behind biophysical processes.
+Finally, simulations still suffer from the limited computational time available: most of the times, the real experimental system is simply too large to be reproduced and the time scale of the process too long. Simulations are thus confined to explore a restricted space, implying that the initial conditions must be chosen carefully to optimise the search and avoid any bias which might persist for the whole length of the simulation. The use of enhanced MD techniques can increase the chances of sampling relevant states, however it introduces a bias which must be removed or properly accounted for in the interpretation of the results \cite{Bernardi2015,Best2005,Barducci2010,Barducci2011,Mills2008}.
+% Bernardi2015 general; Best2005 REX; Barducci2010,Barducci2011 metadynamics; Mills2008 umbrella sampling
+Finally, one should keep in mind that the force fields used are far from optimal. Partly because they rely on approximate functional forms, and partly because it is difficult to find experimental observables measured with the desired resolution able to discriminate between sets of parameters.
+
+It remains important to note the contribution that Molecular Dynamics simulations have played in disclosing important details behind biophysical processes and in unravelling molecular details not accessible to experiments.
+% cite rev
 
 %\printbibliography
 %\bibliographystyle{naturemag}
