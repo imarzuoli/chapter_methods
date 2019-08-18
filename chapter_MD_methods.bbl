@@ -315,7 +315,7 @@ Kleinjung J, et~al (2012) {Implicit Solvation Parameters Derived from Explicit
 
 \bibitem[{Fornili et~al(2012)Fornili, Autore, Chakroun, Martinez, and
   Fraternali}]{Fornili2012}
-Fornili A, et~al (2012) {Protein–Water Interactions in MD Simulations:
+Fornili A, et~al (2012) {Protein-Water Interactions in MD Simulations:
   POPS/POPSCOMP Solvent Accessibility Analysis, Solvation Forces and Hydration
   Sites}. Springer, New York, NY, pp 375--392
 
@@ -445,6 +445,11 @@ Glukhov E, et~al (2005) {Basis for selectivity of cationic antimicrobial
   peptides for bacterial versus mammalian membranes.} The Journal of biological
   chemistry 280(40):33960--7
 
+\bibitem[{Khalid et~al(2019)Khalid, Piggot, and Samsudin}]{Khalid2019}
+Khalid S, Piggot TJ, and Samsudin F (2019) {Atomistic and Coarse Grain
+  Simulations of the Cell Envelope of Gram-Negative Bacteria: What Have We
+  Learned?} Accounts of Chemical Research 52(1):180--188
+
 \bibitem[{Piggot et~al(2011)Piggot, Holdbrook, and Khalid}]{Piggot2011}
 Piggot TJ, Holdbrook DA, and Khalid S (2011) {Electroporation of the E. coli
   and S. Aureus Membranes: Molecular Dynamics Simulations of Complex Bacterial
@@ -460,11 +465,6 @@ Carpenter TS, Parkin J, and Khalid S (2016) {The Free Energy of Small Solute
 Hsu PC, et~al (2017) {It Is Complicated: Curvature, Diffusion, and Lipid
   Sorting within the Two Membranes of Escherichia coli}. The Journal of
   Physical Chemistry Letters 8(22):5513--5518
-
-\bibitem[{Khalid et~al(2019)Khalid, Piggot, and Samsudin}]{Khalid2019}
-Khalid S, Piggot TJ, and Samsudin F (2019) {Atomistic and Coarse Grain
-  Simulations of the Cell Envelope of Gram-Negative Bacteria: What Have We
-  Learned?} Accounts of Chemical Research 52(1):180--188
 
 \bibitem[{Fowler et~al(2016)Fowler, H{\'{e}}, Duncan, Chavent, Kolds{\o}, and
   Sansom}]{Fowler2016}

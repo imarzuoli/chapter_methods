@@ -170,13 +170,13 @@ You can't pop an empty literal stack for entry Tang2009
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Glukhov2005
 while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Khalid2019
+while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Piggot2011
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Carpenter2016
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Hsu2017
-while executing---line 1649 of file my_bib.bst
-You can't pop an empty literal stack for entry Khalid2019
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Fowler2016
 while executing---line 1649 of file my_bib.bst
@@ -198,7 +198,7 @@ You can't pop an empty literal stack for entry Mills2008
 while executing---line 1649 of file my_bib.bst
 You've used 92 entries,
             3261 wiz_defined-function locations,
-            1477 strings with 36135 characters,
+            1477 strings with 36133 characters,
 and the built_in function-call counts, 98597 in all, are:
 = -- 9023
 > -- 2599
