@@ -138,6 +138,12 @@ You can't pop an empty literal stack for entry Kirkpatrick1983
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Pandini2012
 while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Bonomi2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Kikhney2015
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Kleckner2011
+while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Chakroun2013
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Collu2018
@@ -196,45 +202,45 @@ You can't pop an empty literal stack for entry Barducci2011
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Mills2008
 while executing---line 1649 of file my_bib.bst
-You've used 92 entries,
+You've used 95 entries,
             3261 wiz_defined-function locations,
-            1477 strings with 36133 characters,
-and the built_in function-call counts, 98597 in all, are:
-= -- 9023
-> -- 2599
-< -- 26
-+ -- 1065
-- -- 769
-* -- 9307
-:= -- 13179
-add.period$ -- 91
-call.type$ -- 92
-change.case$ -- 369
-chr.to.int$ -- 92
-cite$ -- 96
-duplicate$ -- 8942
-empty$ -- 9421
-format.name$ -- 1069
-if$ -- 20899
+            1503 strings with 37003 characters,
+and the built_in function-call counts, 101772 in all, are:
+= -- 9332
+> -- 2650
+< -- 28
++ -- 1088
+- -- 783
+* -- 9603
+:= -- 13587
+add.period$ -- 94
+call.type$ -- 95
+change.case$ -- 381
+chr.to.int$ -- 95
+cite$ -- 99
+duplicate$ -- 9242
+empty$ -- 9738
+format.name$ -- 1096
+if$ -- 21579
 int.to.chr$ -- 1
-int.to.str$ -- 93
-missing$ -- 835
-newline$ -- 286
-num.names$ -- 278
-pop$ -- 1495
+int.to.str$ -- 96
+missing$ -- 862
+newline$ -- 295
+num.names$ -- 287
+pop$ -- 1543
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 285
 quote$ -- 0
-skip$ -- 1254
+skip$ -- 1292
 stack$ -- 0
-substring$ -- 12472
-swap$ -- 2257
+substring$ -- 12908
+swap$ -- 2327
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 550
+type$ -- 568
 warning$ -- 4
-while$ -- 639
+while$ -- 660
 width$ -- 0
-write$ -- 1111
-(There were 93 error messages)
+write$ -- 1147
+(There were 96 error messages)

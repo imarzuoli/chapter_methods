@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{95}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -315,7 +315,7 @@ Kleinjung J, et~al (2012) {Implicit Solvation Parameters Derived from Explicit
 
 \bibitem[{Fornili et~al(2012)Fornili, Autore, Chakroun, Martinez, and
   Fraternali}]{Fornili2012}
-Fornili A, et~al (2012) {Protein-Water Interactions in MD Simulations:
+Fornili A, et~al (2012) {Protein–Water Interactions in MD Simulations:
   POPS/POPSCOMP Solvent Accessibility Analysis, Solvation Forces and Hydration
   Sites}. Springer, New York, NY, pp 375--392
 
@@ -359,6 +359,21 @@ Kirkpatrick S, Gelatt CD, and Vecchi MP (1983) {Optimization by Simulated
 Pandini A, et~al (2012) {Detection of allosteric signal transmission by
   information-theoretic analysis of protein dynamics}. The FASEB Journal
   26(2):868--881
+
+\bibitem[{Bonomi et~al(2017)Bonomi, Heller, Camilloni, and
+  Vendruscolo}]{Bonomi2017}
+Bonomi M, et~al (2017) {Principles of protein structural ensemble
+  determination}. Current Opinion in Structural Biology 42:106--116
+
+\bibitem[{Kikhney and Svergun(2015)}]{Kikhney2015}
+Kikhney AG, and Svergun DI (2015) {A practical guide to small angle X-ray
+  scattering (SAXS) of flexible and intrinsically disordered proteins}. FEBS
+  Letters 589(19PartA):2570--2577
+
+\bibitem[{Kleckner and Foster(2011)}]{Kleckner2011}
+Kleckner IR, and Foster MP (2011) {An introduction to NMR-based approaches for
+  measuring protein dynamics}. Biochimica et Biophysica Acta (BBA) - Proteins
+  and Proteomics 1814(8):942--968
 
 \bibitem[{Chakroun et~al(2013)Chakroun, Fornili, Prigent, Kleinjung, Dreiss,
   Rezaei, and Fraternali}]{Chakroun2013}
