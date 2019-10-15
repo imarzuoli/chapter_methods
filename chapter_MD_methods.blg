@@ -3,8 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: chapter_MD_methods.aux
 The style file: my_bib.bst
 Database file #1: thesis_ref2.bib.bib
+Warning--I'm ignoring Machado2018's extra "doi" field
+--line 4111 of file thesis_ref2.bib.bib
 Warning--I'm ignoring Leontiadou2006's extra "publisher" field
---line 4457 of file thesis_ref2.bib.bib
+--line 4459 of file thesis_ref2.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You can't pop an empty literal stack for entry Lee2009
 while executing---line 1649 of file my_bib.bst
@@ -66,9 +68,6 @@ You can't pop an empty literal stack for entry Huang2013
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Jorgensen1988
 while executing---line 1649 of file my_bib.bst
-`journal' is a missing field, not a string, for entry Jorgensen1996
-while executing---line 1649 of file my_bib.bst
-Warning--empty journal in Jorgensen1996
 You can't pop an empty literal stack for entry Jorgensen1996
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Marrink2007
@@ -204,43 +203,43 @@ You can't pop an empty literal stack for entry Mills2008
 while executing---line 1649 of file my_bib.bst
 You've used 95 entries,
             3261 wiz_defined-function locations,
-            1503 strings with 37003 characters,
-and the built_in function-call counts, 101772 in all, are:
-= -- 9332
-> -- 2650
-< -- 28
-+ -- 1088
+            1501 strings with 36930 characters,
+and the built_in function-call counts, 102887 in all, are:
+= -- 9449
+> -- 2651
+< -- 26
++ -- 1089
 - -- 783
-* -- 9603
-:= -- 13587
-add.period$ -- 94
+* -- 9753
+:= -- 13719
+add.period$ -- 95
 call.type$ -- 95
-change.case$ -- 381
+change.case$ -- 382
 chr.to.int$ -- 95
-cite$ -- 99
-duplicate$ -- 9242
-empty$ -- 9738
+cite$ -- 98
+duplicate$ -- 9349
+empty$ -- 9877
 format.name$ -- 1096
-if$ -- 21579
+if$ -- 21810
 int.to.chr$ -- 1
 int.to.str$ -- 96
-missing$ -- 862
+missing$ -- 866
 newline$ -- 295
 num.names$ -- 287
-pop$ -- 1543
+pop$ -- 1536
 preamble$ -- 1
 purify$ -- 285
 quote$ -- 0
-skip$ -- 1292
+skip$ -- 1257
 stack$ -- 0
-substring$ -- 12908
-swap$ -- 2327
-text.length$ -- 6
+substring$ -- 13194
+swap$ -- 2317
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 568
-warning$ -- 4
-while$ -- 660
+warning$ -- 3
+while$ -- 661
 width$ -- 0
-write$ -- 1147
-(There were 96 error messages)
+write$ -- 1149
+(There were 95 error messages)

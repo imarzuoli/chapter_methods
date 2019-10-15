@@ -159,11 +159,12 @@ Jorgensen WL, and Tirado-Rives J (1988) {The OPLS [optimized potentials for
   for crystals of cyclic peptides and crambin}. Journal of the American
   Chemical Society 110(6):1657--1666
 
-\bibitem[{{William L. Jorgensen} et~al(1996){William L. Jorgensen}, , {David S.
-  Maxwell}, and Tirado-Rives}]{Jorgensen1996}
-{William L Jorgensen}, et~al (1996) {Development and Testing of the OPLS
-  All-Atom Force Field on Conformational Energetics and Properties of Organic
-  Liquids}
+\bibitem[{Jorgensen et~al(1996)Jorgensen, Maxwell, and
+  Tirado-Rives}]{Jorgensen1996}
+Jorgensen WL, Maxwell DS, and Tirado-Rives J (1996) {Development and Testing of
+  the OPLS All-Atom Force Field on Conformational Energetics and Properties of
+  Organic Liquids}. Journal of the American Chemical Society
+  118(45):11225--11236
 
 \bibitem[{Marrink et~al(2007)Marrink, Risselada, Yefimov, Tieleman, and {De
   Vries}}]{Marrink2007}
@@ -181,14 +182,15 @@ de~Jong DH, et~al (2013) {Improved Parameters for the Martini Coarse-Grained
   Protein Force Field}. Journal of Chemical Theory and Computation
   9(1):687--697
 
-\bibitem[{Machado et~al(2018)Machado, Guisasola, Klein, S{\'{o}}{\~{n}}ora,
+\bibitem[{Machado et~al(2019)Machado, Guisasola, Klein, S{\'{o}}{\~{n}}ora,
   Silva, and Pantano}]{Machado2018}
-Machado MR, et~al (2018) {The SIRAH force field 2.0: Altius, Fortius, Citius}.
-  bioRxiv p 436774
+Machado MR, et~al (2019) {The SIRAH force field 2.0: Altius, Fortius, Citius}.
+  Journal of Chemical Theory and Computation 15(4):2719--2733
 
 \bibitem[{Barrera et~al(2019)Barrera, Machado, and Pantano}]{Barrera2019}
 Barrera EE, Machado MR, and Pantano S (2019) {Fat SIRAH: Coarse-grained
-  phospholipids to explore membrane-protein dynamics}. bioRxiv p 627570
+  phospholipids to explore membrane-protein dynamics}. Journal of Chemical
+  Theory and Computation , dOI: 10.1021/acs.jctc.9b00435
 
 \bibitem[{Oostenbrink et~al(2005)Oostenbrink, Soares, van~der Vegt, and van
   Gunsteren}]{Oostenbrink2005}
@@ -315,7 +317,7 @@ Kleinjung J, et~al (2012) {Implicit Solvation Parameters Derived from Explicit
 
 \bibitem[{Fornili et~al(2012)Fornili, Autore, Chakroun, Martinez, and
   Fraternali}]{Fornili2012}
-Fornili A, et~al (2012) {Protein–Water Interactions in MD Simulations:
+Fornili A, et~al (2012) {Protein-Water Interactions in MD Simulations:
   POPS/POPSCOMP Solvent Accessibility Analysis, Solvation Forces and Hydration
   Sites}. Springer, New York, NY, pp 375--392
 
@@ -524,6 +526,6 @@ Barducci A, Bonomi M, and Parrinello M (2011) {Metadynamics}. Wiley
 
 \bibitem[{Mills and Andricioaei(2008)}]{Mills2008}
 Mills M, and Andricioaei I (2008) {An experimentally guided umbrella sampling
-  protocol for biomolecules.} The Journal of chemical physics 129(11):114101
+  protocol for biomolecules.} The Journal of Chemical Physics 129(11):114101
 
 \end{thebibliography}
