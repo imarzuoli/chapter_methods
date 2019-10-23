@@ -6,7 +6,7 @@
 \@writefile{toc}{\contentsline {title}{Molecular simulations of biomolecules: some useful guidelines}{1}}
 \@writefile{toc}{\authcount {1}}
 \@writefile{toc}{\contentsline {author}{Irene Marzuoli and Franca Fraternali}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Materials}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Extracting the Dynamics of a Molecular System: the Time Evolution Algorithm}{3}}
 \newlabel{eq:newton}{{1}{3}}[None]
@@ -16,17 +16,22 @@
 \citation{Andersen1980}
 \citation{Bussi2007}
 \citation{Berendsen1984}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Thermostats and barostats: rescuing the approximation limit}{4}}
+\citation{Bussi2007}
+\citation{Durrett2010}
+\newlabel{eq:berend}{{6}{5}}[None]
+\citation{Berendsen1984}
 \citation{Parrinello1981}
 \citation{Martyna1996}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Thermostats and barostats: rescuing the approximation limit}{4}}
+\citation{Parrinello1981}
 \citation{Oostenbrink2004,Schmid2011}
 \citation{Berendsen1995,Abraham2015,gromacs_man}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Force fields}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Force field definition}{5}}
-\newlabel{sec:ff}{{2.3.1}{5}}[None]
-\@writefile{toc}{\contentsline {paragraph}{Covalent (bonded) interactions}{6}}
-\newlabel{eq:ff}{{6}{6}}[None]
-\@writefile{toc}{\contentsline {paragraph}{Non-bonded interactions}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Force fields}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Force field definition}{6}}
+\newlabel{sec:ff}{{2.3.1}{6}}[None]
+\@writefile{toc}{\contentsline {paragraph}{Covalent (bonded) interactions}{7}}
+\newlabel{eq:ff}{{9}{7}}[None]
+\@writefile{toc}{\contentsline {paragraph}{Non-bonded interactions}{7}}
 \citation{Essmann1995}
 \citation{Tironi1995}
 \citation{Lipkin2017}
@@ -46,22 +51,23 @@
 \citation{Machado2018,Barrera2019}
 \citation{Maier2015,Dickson2014,Wang2004_amber,MacKerell1998,Klauda2010}
 \citation{Oostenbrink2005,Schmid2011,Reif2013}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Force fields: classifications}{8}}
-\newlabel{sec:ff_ex}{{2.3.2}{8}}[None]
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}The GROMOS force field}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces List of most popular simulation force field for biomolecules, ordered from detailed to coarse (reference to the relative papers in Section 2.3.2\hbox {}). On the left, snapshot of notable systems simulated with the force fields CHARMM (adapted with permission from \cite  {Lipkin2017}. Copyright (2017) American Chemical Society); GROMOS (adapted with permission from \cite  {Macpherson2019}); SIRAH (adapted with permission from \cite  {Machado2017}. Copyright (2017) American Chemical Society) and MARTINI (adapted with permission from \cite  {Samsudin2017}). Copyright (2017) Elsevier).}}{9}}
-\newlabel{fig:ff}{{1}{9}}[None]
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Force fields: classifications}{9}}
+\newlabel{sec:ff_ex}{{2.3.2}{9}}[None]
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}The GROMOS force field}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces List of most popular simulation force field for biomolecules, ordered from detailed to coarse (reference to the relative papers in Section 2.3.2\hbox {}). On the left, snapshot of notable systems simulated with the force fields CHARMM (adapted with permission from \cite  {Lipkin2017}. Copyright (2017) American Chemical Society); GROMOS (adapted with permission from \cite  {Macpherson2019}); SIRAH (adapted with permission from \cite  {Machado2017}. Copyright (2017) American Chemical Society) and MARTINI (adapted with permission from \cite  {Samsudin2017}). Copyright (2017) Elsevier).}}{10}}
+\newlabel{fig:ff}{{1}{10}}[None]
 \citation{Berendsen1981}
 \citation{Mark2001}
 \citation{Reif2012}
+\citation{Margreitter2017,Marzuoli2019}
 \citation{Marrink2007,Monticelli2008,DeJong2013}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}The MARTINI force field}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}The MARTINI force field}{11}}
 \citation{PDB}
 \citation{Periole2009}
 \citation{Yesylevskyy2010}
 \citation{Wassenaar2015}
 \citation{Lee2012}
-\@writefile{toc}{\contentsline {paragraph}{Backmapping techniques}{11}}
+\@writefile{toc}{\contentsline {paragraph}{Backmapping techniques}{12}}
 \citation{Ren2003,Ponder2010}
 \citation{Anisimov2004}
 \citation{Cieplak2001}
@@ -72,17 +78,17 @@
 \citation{Fraternali1996,Kleinjung2003,Kleinjung2012,Fornili2012}
 \citation{Zhu2005}
 \citation{Milano2009}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Beyond a classical atomistic framework}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Beyond a classical atomistic framework}{13}}
 \citation{Okamoto2004}
 \citation{Huber1994,Laio2002}
 \citation{Torrie1977}
 \citation{Kirkpatrick1983}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}System setup}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}System setup}{14}}
 \citation{Pandini2012}
 \citation{Macpherson2019}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Methods: relevant examples}{15}}
-\newlabel{sec:methods}{{3}{15}}[None]
-\@writefile{toc}{\contentsline {paragraph}{Simulations of protein and their interactions}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods: relevant examples}{16}}
+\newlabel{sec:methods}{{3}{16}}[None]
+\@writefile{toc}{\contentsline {paragraph}{Simulations of protein and their interactions}{16}}
 \citation{Bonomi2017,Kikhney2015,Kleckner2011}
 \citation{Chakroun2013}
 \citation{Collu2018}
@@ -97,13 +103,13 @@
 \citation{Piggot2011}
 \citation{Samsudin2017}
 \citation{Carpenter2016}
-\@writefile{toc}{\contentsline {paragraph}{Simulations of model membranes}{17}}
+\@writefile{toc}{\contentsline {paragraph}{Simulations of model membranes}{18}}
 \citation{Hsu2017}
 \citation{Khalid2019}
 \citation{Fowler2016}
 \citation{VanGunsteren2008}
 \citation{Goncalves2013,Meissner2014}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Notes: validation and challenges of MD simulations}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Notes: validation and challenges of MD simulations}{19}}
 \citation{Bernardi2015,Best2005,Barducci2010,Barducci2011,Mills2008}
 \bibstyle{my_bib}
 \bibdata{thesis_ref2.bib}
@@ -116,93 +122,98 @@
 \bibcite{Hoover1985}{{7}{1985}{{Hoover}}{{}}}
 \bibcite{Andersen1980}{{8}{1980}{{Andersen}}{{}}}
 \bibcite{Bussi2007}{{9}{2007}{{Bussi et~al}}{{Bussi, Donadio, and Parrinello}}}
-\bibcite{Parrinello1981}{{10}{1981}{{Parrinello and Rahman}}{{}}}
-\bibcite{Martyna1996}{{11}{1996}{{Martyna et~al}}{{Martyna, Tuckerman, Tobias, and Klein}}}
-\bibcite{Oostenbrink2004}{{12}{2004}{{Oostenbrink et~al}}{{Oostenbrink, Villa, Mark, and {Van Gunsteren}}}}
-\bibcite{Schmid2011}{{13}{2011}{{Schmid et~al}}{{Schmid, Eichenberger, Choutko, Riniker, Winger, Mark, and van Gunsteren}}}
-\@writefile{toc}{\contentsline {section}{References}{20}}
-\@writefile{toc}{\contentsline {section}{References}{20}}
-\@mtwritefile{\contentsline {mtchap}{References}{20}}
-\bibcite{Berendsen1995}{{14}{1995}{{Berendsen et~al}}{{Berendsen, van~der Spoel, and van Drunen}}}
-\bibcite{Abraham2015}{{15}{2015}{{Abraham et~al}}{{Abraham, Murtola, Schulz, P{\'{a}}ll, Smith, Hess, and Lindahl}}}
-\bibcite{gromacs_man}{{16}{2018}{{Abraham et~al}}{{Abraham, van~der Spoel, Lindahl, Hess, and the GROMACS~development team}}}
-\bibcite{Essmann1995}{{17}{1995}{{Essmann et~al}}{{Essmann, Perera, Berkowitz, Darden, Lee, and Pedersen}}}
-\bibcite{Tironi1995}{{18}{1995}{{Tironi et~al}}{{Tironi, Sperb, Smith, and van Gunsteren}}}
-\bibcite{Lipkin2017}{{19}{2017}{{Lipkin et~al}}{{Lipkin, Pino-Angeles, and Lazaridis}}}
-\bibcite{Macpherson2019}{{20}{2019}{{Macpherson et~al}}{{Macpherson, Theisen, Masino, Fets, Driscoll, Encheva, Snijders, Martin, Kleinjung, Barran, Fraternali, and Anastasiou}}}
-\bibcite{Machado2017}{{21}{2017}{{Machado et~al}}{{Machado, Gonz{\'{a}}lez, and Pantano}}}
-\bibcite{Samsudin2017}{{22}{2017}{{Samsudin et~al}}{{Samsudin, Boags, Piggot, and Khalid}}}
-\bibcite{Maier2015}{{23}{2015}{{Maier et~al}}{{Maier, Martinez, Kasavajhala, Wickstrom, Hauser, and Simmerling}}}
-\bibcite{Dickson2014}{{24}{2014}{{Dickson et~al}}{{Dickson, Madej, Skjevik, Betz, Teigen, Gould, and Walker}}}
-\bibcite{Wang2004_amber}{{25}{2004}{{Wang et~al}}{{Wang, Wolf, Caldwell, Kollman, and Case}}}
-\bibcite{MacKerell1998}{{26}{1998}{{MacKerell et~al}}{{MacKerell, Bashford, Bellott, Dunbrack, Evanseck, Field, Fischer, Gao, Guo, Ha, Joseph-McCarthy, Kuchnir, Kuczera, Lau, Mattos, Michnick, Ngo, Nguyen, Prodhom, Reiher, Roux, Schlenkrich, Smith, Stote, Straub, Watanabe, Wi{\'{o}}rkiewicz-Kuczera, Yin, and Karplus}}}
-\bibcite{Klauda2010}{{27}{2010}{{Klauda et~al}}{{Klauda, Venable, Freites, O'Connor, Tobias, Mondragon-Ramirez, Vorobyov, MacKerell, and Pastor}}}
-\bibcite{Huang2013}{{28}{2013}{{Huang and MacKerell}}{{}}}
-\bibcite{Jorgensen1988}{{29}{1988}{{Jorgensen and Tirado-Rives}}{{}}}
-\bibcite{Jorgensen1996}{{30}{1996}{{Jorgensen et~al}}{{Jorgensen, Maxwell, and Tirado-Rives}}}
-\bibcite{Marrink2007}{{31}{2007}{{Marrink et~al}}{{Marrink, Risselada, Yefimov, Tieleman, and {De Vries}}}}
-\bibcite{Monticelli2008}{{32}{2008}{{Monticelli et~al}}{{Monticelli, Kandasamy, Periole, Larson, Tieleman, and Marrink}}}
-\bibcite{DeJong2013}{{33}{2013}{{de~Jong et~al}}{{de~Jong, Singh, Bennett, Arnarez, Wassenaar, Sch{\"{a}}fer, Periole, Tieleman, and Marrink}}}
-\bibcite{Machado2018}{{34}{2019}{{Machado et~al}}{{Machado, Guisasola, Klein, S{\'{o}}{\~{n}}ora, Silva, and Pantano}}}
-\bibcite{Barrera2019}{{35}{2019}{{Barrera et~al}}{{Barrera, Machado, and Pantano}}}
-\bibcite{Oostenbrink2005}{{36}{2005}{{Oostenbrink et~al}}{{Oostenbrink, Soares, van~der Vegt, and van Gunsteren}}}
-\bibcite{Reif2013}{{37}{2013}{{Reif et~al}}{{Reif, Winger, and Oostenbrink}}}
-\bibcite{Berendsen1981}{{38}{1981}{{Berendsen et~al}}{{Berendsen, Postma, Van~Gunsteren, and Hermans}}}
-\bibcite{PDB}{{39}{2000}{{Berman et~al}}{{Berman, Westbrook, Feng, Gilliland, Bhat, Weissig, Shindyalov, and Bourne}}}
-\bibcite{Periole2009}{{40}{2009}{{Periole et~al}}{{Periole, Cavalli, Marrink, and Ceruso}}}
-\bibcite{Yesylevskyy2010}{{41}{2010}{{Yesylevskyy et~al}}{{Yesylevskyy, Sch{\"{a}}fer, Sengupta, and Marrink}}}
-\bibcite{Wassenaar2015}{{42}{2015}{{Wassenaar et~al}}{{Wassenaar, Ing{\'{o}}lfsson, B{\"{o}}ckmann, Tieleman, and Marrink}}}
-\bibcite{Lee2012}{{43}{2012}{{Lee et~al}}{{Lee, Cho, and Schatz}}}
-\bibcite{Ren2003}{{44}{2003}{{Ren and Ponder}}{{}}}
-\bibcite{Ponder2010}{{45}{2010}{{Ponder et~al}}{{Ponder, Wu, Ren, Pande, Chodera, Schnieders, Haque, Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson, and Head-Gordon}}}
-\bibcite{Anisimov2004}{{46}{2005}{{Anisimov et~al}}{{Anisimov, Lamoureux, Vorobyov, Huang, Roux, and MacKerell}}}
-\bibcite{Cieplak2001}{{47}{2001}{{Cieplak et~al}}{{Cieplak, Caldwell, and Kollman}}}
-\bibcite{Orsi2011}{{48}{2011}{{Orsi and Essex}}{{}}}
-\bibcite{Ahmadi2018}{{49}{2018}{{Ahmadi et~al}}{{Ahmadi, {Barrios Herrera}, Chehelamirani, Hosta{\v {s}}, Jalife, and Salahub}}}
-\bibcite{Shao2015}{{50}{2015}{{Shao et~al}}{{Shao, Gan, Epifanovsky, Gilbert, Wormit, Kussmann, Lange, Behn, Deng, Feng, Ghosh, Goldey, Horn, Jacobson, Kaliman, Khaliullin, Ku{\'{s}}, Landau, Liu, Proynov, Rhee, Richard, Rohrdanz, Steele, Sundstrom, Woodcock, Zimmerman, Zuev, Albrecht, Alguire, Austin, Beran, Bernard, Berquist, Brandhorst, Bravaya, Brown, Casanova, Chang, Chen, Chien, Closser, Crittenden, Diedenhofen, DiStasio, Do, Dutoi, Edgar, Fatehi, Fusti-Molnar, Ghysels, Golubeva-Zadorozhnaya, Gomes, Hanson-Heine, Harbach, Hauser, Hohenstein, Holden, Jagau, Ji, Kaduk, Khistyaev, Kim, Kim, King, Klunzinger, Kosenkov, Kowalczyk, Krauter, Lao, Laurent, Lawler, Levchenko, Lin, Liu, Livshits, Lochan, Luenser, Manohar, Manzer, Mao, Mardirossian, Marenich, Maurer, Mayhall, Neuscamman, Oana, Olivares-Amaya, O'Neill, Parkhill, Perrine, Peverati, Prociuk, Rehn, Rosta, Russ, Sharada, Sharma, Small, Sodt, Stein, St{\"{u}}ck, Su, Thom, Tsuchimochi, Vanovschi, Vogt, Vydrov, Wang, Watson, Wenzel, White, Williams, Yang, Yeganeh, Yost, You, Zhang, Zhang, Zhao, Brooks, Chan, Chipman, Cramer, Goddard, Gordon, Hehre, Klamt, Schaefer, Schmidt, Sherrill, Truhlar, Warshel, Xu, Aspuru-Guzik, Baer, Bell, Besley, Chai, Dreuw, Dunietz, Furlani, Gwaltney, Hsu, Jung, Kong, Lambrecht, Liang, Ochsenfeld, Rassolov, Slipchenko, Subotnik, {Van Voorhis}, Herbert, Krylov, Gill, and Head-Gordon}}}
-\bibcite{Kleinjung2014}{{51}{2014}{{Kleinjung and Fraternali}}{{}}}
-\bibcite{Fraternali1996}{{52}{1996}{{Fraternali and van Gunsteren}}{{}}}
-\bibcite{Kleinjung2003}{{53}{2003}{{Kleinjung et~al}}{{Kleinjung, Fraternali, Martin, and Bayley}}}
-\bibcite{Kleinjung2012}{{54}{2012}{{Kleinjung et~al}}{{Kleinjung, Scott, Allison, van Gunsteren, and Fraternali}}}
-\bibcite{Fornili2012}{{55}{2012}{{Fornili et~al}}{{Fornili, Autore, Chakroun, Martinez, and Fraternali}}}
-\bibcite{Zhu2005}{{56}{2005}{{Zhu et~al}}{{Zhu, Alexov, and Honig}}}
-\bibcite{Milano2009}{{57}{2009}{{Milano and Kawakatsu}}{{}}}
-\bibcite{Okamoto2004}{{58}{2004}{{Okamoto}}{{}}}
-\bibcite{Huber1994}{{59}{1994}{{Huber et~al}}{{Huber, Torda, and van Gunsteren}}}
-\bibcite{Laio2002}{{60}{2002}{{Laio and Parrinello}}{{}}}
-\bibcite{Torrie1977}{{61}{1977}{{Torrie and Valleau}}{{}}}
-\bibcite{Kirkpatrick1983}{{62}{1983}{{Kirkpatrick et~al}}{{Kirkpatrick, Gelatt, and Vecchi}}}
-\bibcite{Pandini2012}{{63}{2012}{{Pandini et~al}}{{Pandini, Fornili, Fraternali, and Kleinjung}}}
-\bibcite{Bonomi2017}{{64}{2017}{{Bonomi et~al}}{{Bonomi, Heller, Camilloni, and Vendruscolo}}}
-\bibcite{Kikhney2015}{{65}{2015}{{Kikhney and Svergun}}{{}}}
-\bibcite{Kleckner2011}{{66}{2011}{{Kleckner and Foster}}{{}}}
-\bibcite{Chakroun2013}{{67}{2013}{{Chakroun et~al}}{{Chakroun, Fornili, Prigent, Kleinjung, Dreiss, Rezaei, and Fraternali}}}
-\bibcite{Collu2018}{{68}{2018}{{Collu et~al}}{{Collu, Spiga, Chakroun, Rezaei, and Fraternali}}}
-\bibcite{DeSimone2005}{{69}{2005}{{{De Simone} et~al}}{{{De Simone}, Dodson, Verma, Zagari, and Fraternali}}}
-\bibcite{DeSimone2006}{{70}{2006}{{{De Simone} et~al}}{{{De Simone}, Dodson, Fraternali, and Zagari}}}
-\bibcite{Sengupta2019}{{71}{2019}{{Sengupta et~al}}{{Sengupta, Carballo-Pacheco, and Strodel}}}
-\bibcite{Risselada2008}{{72}{2008}{{Risselada and Marrink}}{{}}}
-\bibcite{Song2019}{{73}{2019}{{Song et~al}}{{Song, de~Groot, and Sansom}}}
-\bibcite{Leontiadou2006}{{74}{2006}{{Leontiadou et~al}}{{Leontiadou, Mark, and Marrink}}}
-\bibcite{Ulmschneider2017}{{75}{2017}{{Ulmschneider}}{{}}}
-\bibcite{Sun2015}{{76}{2015}{{Sun et~al}}{{Sun, Forsman, and Woodward}}}
-\bibcite{Wang2012}{{77}{2012}{{Wang et~al}}{{Wang, Schlamadinger, Kim, and McCammon}}}
-\bibcite{Zhao2018}{{78}{2018}{{Zhao et~al}}{{Zhao, Cao, Bian, Hu, Wang, and Zhou}}}
-\bibcite{Chen2019}{{79}{2019}{{Chen et~al}}{{Chen, Starr, Troendle, Wiedman, Wimley, Ulmschneider, and Ulmschneider}}}
-\bibcite{Castelletto2016}{{80}{2016}{{Castelletto et~al}}{{Castelletto, de~Santis, Alkassem, Lamarre, Noble, Ray, Bella, Burns, Hoogenboom, Ryadnov, Vandesompele, and Wittwer}}}
-\bibcite{Tang2009}{{81}{2009}{{Tang and Hong}}{{}}}
-\bibcite{Glukhov2005}{{82}{2005}{{Glukhov et~al}}{{Glukhov, Stark, Burrows, and Deber}}}
-\bibcite{Khalid2019}{{83}{2019}{{Khalid et~al}}{{Khalid, Piggot, and Samsudin}}}
-\bibcite{Piggot2011}{{84}{2011}{{Piggot et~al}}{{Piggot, Holdbrook, and Khalid}}}
-\bibcite{Carpenter2016}{{85}{2016}{{Carpenter et~al}}{{Carpenter, Parkin, and Khalid}}}
-\bibcite{Hsu2017}{{86}{2017}{{Hsu et~al}}{{Hsu, Samsudin, Shearer, and Khalid}}}
-\bibcite{Fowler2016}{{87}{2016}{{Fowler et~al}}{{Fowler, H{\'{e}}, Duncan, Chavent, Kolds{\o }, and Sansom}}}
-\bibcite{VanGunsteren2008}{{88}{2008}{{van Gunsteren et~al}}{{van Gunsteren, Dolenc, and Mark}}}
-\bibcite{Goncalves2013}{{89}{2013}{{Gon{\c {c}}alves et~al}}{{Gon{\c {c}}alves, Dreyer, Lupieri, Barrera-Pati{\~{n}}o, Ippoliti, Webb, Corrie, and Carloni}}}
-\bibcite{Meissner2014}{{90}{2014}{{Mei{\ss }ner et~al}}{{Mei{\ss }ner, Schneider, Schiffels, and {Colombi Ciacchi}}}}
-\bibcite{Bernardi2015}{{91}{2015}{{Bernardi et~al}}{{Bernardi, Melo, and Schulten}}}
-\bibcite{Best2005}{{92}{2005}{{Best et~al}}{{Best, Clarke, and Karplus}}}
-\bibcite{Barducci2010}{{93}{2010}{{Barducci et~al}}{{Barducci, Bonomi, and Parrinello}}}
-\bibcite{Barducci2011}{{94}{2011}{{Barducci et~al}}{{Barducci, Bonomi, and Parrinello}}}
-\bibcite{Mills2008}{{95}{2008}{{Mills and Andricioaei}}{{}}}
+\bibcite{Durrett2010}{{10}{2010}{{Durrett}}{{}}}
+\bibcite{Parrinello1981}{{11}{1981}{{Parrinello and Rahman}}{{}}}
+\bibcite{Martyna1996}{{12}{1996}{{Martyna et~al}}{{Martyna, Tuckerman, Tobias, and Klein}}}
+\bibcite{Oostenbrink2004}{{13}{2004}{{Oostenbrink et~al}}{{Oostenbrink, Villa, Mark, and {Van Gunsteren}}}}
+\@writefile{toc}{\contentsline {section}{References}{21}}
+\@writefile{toc}{\contentsline {section}{References}{21}}
+\@mtwritefile{\contentsline {mtchap}{References}{21}}
+\bibcite{Schmid2011}{{14}{2011}{{Schmid et~al}}{{Schmid, Eichenberger, Choutko, Riniker, Winger, Mark, and van Gunsteren}}}
+\bibcite{Berendsen1995}{{15}{1995}{{Berendsen et~al}}{{Berendsen, van~der Spoel, and van Drunen}}}
+\bibcite{Abraham2015}{{16}{2015}{{Abraham et~al}}{{Abraham, Murtola, Schulz, P{\'{a}}ll, Smith, Hess, and Lindahl}}}
+\bibcite{gromacs_man}{{17}{2018}{{Abraham et~al}}{{Abraham, van~der Spoel, Lindahl, Hess, and the GROMACS~development team}}}
+\bibcite{Essmann1995}{{18}{1995}{{Essmann et~al}}{{Essmann, Perera, Berkowitz, Darden, Lee, and Pedersen}}}
+\bibcite{Tironi1995}{{19}{1995}{{Tironi et~al}}{{Tironi, Sperb, Smith, and van Gunsteren}}}
+\bibcite{Lipkin2017}{{20}{2017}{{Lipkin et~al}}{{Lipkin, Pino-Angeles, and Lazaridis}}}
+\bibcite{Macpherson2019}{{21}{2019}{{Macpherson et~al}}{{Macpherson, Theisen, Masino, Fets, Driscoll, Encheva, Snijders, Martin, Kleinjung, Barran, Fraternali, and Anastasiou}}}
+\bibcite{Machado2017}{{22}{2017}{{Machado et~al}}{{Machado, Gonz{\'{a}}lez, and Pantano}}}
+\bibcite{Samsudin2017}{{23}{2017}{{Samsudin et~al}}{{Samsudin, Boags, Piggot, and Khalid}}}
+\bibcite{Maier2015}{{24}{2015}{{Maier et~al}}{{Maier, Martinez, Kasavajhala, Wickstrom, Hauser, and Simmerling}}}
+\bibcite{Dickson2014}{{25}{2014}{{Dickson et~al}}{{Dickson, Madej, Skjevik, Betz, Teigen, Gould, and Walker}}}
+\bibcite{Wang2004_amber}{{26}{2004}{{Wang et~al}}{{Wang, Wolf, Caldwell, Kollman, and Case}}}
+\bibcite{MacKerell1998}{{27}{1998}{{MacKerell et~al}}{{MacKerell, Bashford, Bellott, Dunbrack, Evanseck, Field, Fischer, Gao, Guo, Ha, Joseph-McCarthy, Kuchnir, Kuczera, Lau, Mattos, Michnick, Ngo, Nguyen, Prodhom, Reiher, Roux, Schlenkrich, Smith, Stote, Straub, Watanabe, Wi{\'{o}}rkiewicz-Kuczera, Yin, and Karplus}}}
+\bibcite{Klauda2010}{{28}{2010}{{Klauda et~al}}{{Klauda, Venable, Freites, O'Connor, Tobias, Mondragon-Ramirez, Vorobyov, MacKerell, and Pastor}}}
+\bibcite{Huang2013}{{29}{2013}{{Huang and MacKerell}}{{}}}
+\bibcite{Jorgensen1988}{{30}{1988}{{Jorgensen and Tirado-Rives}}{{}}}
+\bibcite{Jorgensen1996}{{31}{1996}{{Jorgensen et~al}}{{Jorgensen, Maxwell, and Tirado-Rives}}}
+\bibcite{Marrink2007}{{32}{2007}{{Marrink et~al}}{{Marrink, Risselada, Yefimov, Tieleman, and {De Vries}}}}
+\bibcite{Monticelli2008}{{33}{2008}{{Monticelli et~al}}{{Monticelli, Kandasamy, Periole, Larson, Tieleman, and Marrink}}}
+\bibcite{DeJong2013}{{34}{2013}{{de~Jong et~al}}{{de~Jong, Singh, Bennett, Arnarez, Wassenaar, Sch{\"{a}}fer, Periole, Tieleman, and Marrink}}}
+\bibcite{Machado2018}{{35}{2019}{{Machado et~al}}{{Machado, Guisasola, Klein, S{\'{o}}{\~{n}}ora, Silva, and Pantano}}}
+\bibcite{Barrera2019}{{36}{2019}{{Barrera et~al}}{{Barrera, Machado, and Pantano}}}
+\bibcite{Oostenbrink2005}{{37}{2005}{{Oostenbrink et~al}}{{Oostenbrink, Soares, van~der Vegt, and van Gunsteren}}}
+\bibcite{Reif2013}{{38}{2013}{{Reif et~al}}{{Reif, Winger, and Oostenbrink}}}
+\bibcite{Berendsen1981}{{39}{1981}{{Berendsen et~al}}{{Berendsen, Postma, Van~Gunsteren, and Hermans}}}
+\bibcite{Mark2001}{{40}{2001}{{Mark and Nilsson}}{{}}}
+\bibcite{Reif2012}{{41}{2012}{{Reif et~al}}{{Reif, H{\"{u}}nenberger, and Oostenbrink}}}
+\bibcite{Margreitter2017}{{42}{2017}{{Margreitter et~al}}{{Margreitter, Reif, and Oostenbrink}}}
+\bibcite{Marzuoli2019}{{43}{2019}{{Marzuoli et~al}}{{Marzuoli, Margreitter, and Fraternali}}}
+\bibcite{PDB}{{44}{2000}{{Berman et~al}}{{Berman, Westbrook, Feng, Gilliland, Bhat, Weissig, Shindyalov, and Bourne}}}
+\bibcite{Periole2009}{{45}{2009}{{Periole et~al}}{{Periole, Cavalli, Marrink, and Ceruso}}}
+\bibcite{Yesylevskyy2010}{{46}{2010}{{Yesylevskyy et~al}}{{Yesylevskyy, Sch{\"{a}}fer, Sengupta, and Marrink}}}
+\bibcite{Wassenaar2015}{{47}{2015}{{Wassenaar et~al}}{{Wassenaar, Ing{\'{o}}lfsson, B{\"{o}}ckmann, Tieleman, and Marrink}}}
+\bibcite{Lee2012}{{48}{2012}{{Lee et~al}}{{Lee, Cho, and Schatz}}}
+\bibcite{Ren2003}{{49}{2003}{{Ren and Ponder}}{{}}}
+\bibcite{Ponder2010}{{50}{2010}{{Ponder et~al}}{{Ponder, Wu, Ren, Pande, Chodera, Schnieders, Haque, Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson, and Head-Gordon}}}
+\bibcite{Anisimov2004}{{51}{2005}{{Anisimov et~al}}{{Anisimov, Lamoureux, Vorobyov, Huang, Roux, and MacKerell}}}
+\bibcite{Cieplak2001}{{52}{2001}{{Cieplak et~al}}{{Cieplak, Caldwell, and Kollman}}}
+\bibcite{Orsi2011}{{53}{2011}{{Orsi and Essex}}{{}}}
+\bibcite{Ahmadi2018}{{54}{2018}{{Ahmadi et~al}}{{Ahmadi, {Barrios Herrera}, Chehelamirani, Hosta{\v {s}}, Jalife, and Salahub}}}
+\bibcite{Shao2015}{{55}{2015}{{Shao et~al}}{{Shao, Gan, Epifanovsky, Gilbert, Wormit, Kussmann, Lange, Behn, Deng, Feng, Ghosh, Goldey, Horn, Jacobson, Kaliman, Khaliullin, Ku{\'{s}}, Landau, Liu, Proynov, Rhee, Richard, Rohrdanz, Steele, Sundstrom, Woodcock, Zimmerman, Zuev, Albrecht, Alguire, Austin, Beran, Bernard, Berquist, Brandhorst, Bravaya, Brown, Casanova, Chang, Chen, Chien, Closser, Crittenden, Diedenhofen, DiStasio, Do, Dutoi, Edgar, Fatehi, Fusti-Molnar, Ghysels, Golubeva-Zadorozhnaya, Gomes, Hanson-Heine, Harbach, Hauser, Hohenstein, Holden, Jagau, Ji, Kaduk, Khistyaev, Kim, Kim, King, Klunzinger, Kosenkov, Kowalczyk, Krauter, Lao, Laurent, Lawler, Levchenko, Lin, Liu, Livshits, Lochan, Luenser, Manohar, Manzer, Mao, Mardirossian, Marenich, Maurer, Mayhall, Neuscamman, Oana, Olivares-Amaya, O'Neill, Parkhill, Perrine, Peverati, Prociuk, Rehn, Rosta, Russ, Sharada, Sharma, Small, Sodt, Stein, St{\"{u}}ck, Su, Thom, Tsuchimochi, Vanovschi, Vogt, Vydrov, Wang, Watson, Wenzel, White, Williams, Yang, Yeganeh, Yost, You, Zhang, Zhang, Zhao, Brooks, Chan, Chipman, Cramer, Goddard, Gordon, Hehre, Klamt, Schaefer, Schmidt, Sherrill, Truhlar, Warshel, Xu, Aspuru-Guzik, Baer, Bell, Besley, Chai, Dreuw, Dunietz, Furlani, Gwaltney, Hsu, Jung, Kong, Lambrecht, Liang, Ochsenfeld, Rassolov, Slipchenko, Subotnik, {Van Voorhis}, Herbert, Krylov, Gill, and Head-Gordon}}}
+\bibcite{Kleinjung2014}{{56}{2014}{{Kleinjung and Fraternali}}{{}}}
+\bibcite{Fraternali1996}{{57}{1996}{{Fraternali and van Gunsteren}}{{}}}
+\bibcite{Kleinjung2003}{{58}{2003}{{Kleinjung et~al}}{{Kleinjung, Fraternali, Martin, and Bayley}}}
+\bibcite{Kleinjung2012}{{59}{2012}{{Kleinjung et~al}}{{Kleinjung, Scott, Allison, van Gunsteren, and Fraternali}}}
+\bibcite{Fornili2012}{{60}{2012}{{Fornili et~al}}{{Fornili, Autore, Chakroun, Martinez, and Fraternali}}}
+\bibcite{Zhu2005}{{61}{2005}{{Zhu et~al}}{{Zhu, Alexov, and Honig}}}
+\bibcite{Milano2009}{{62}{2009}{{Milano and Kawakatsu}}{{}}}
+\bibcite{Okamoto2004}{{63}{2004}{{Okamoto}}{{}}}
+\bibcite{Huber1994}{{64}{1994}{{Huber et~al}}{{Huber, Torda, and van Gunsteren}}}
+\bibcite{Laio2002}{{65}{2002}{{Laio and Parrinello}}{{}}}
+\bibcite{Torrie1977}{{66}{1977}{{Torrie and Valleau}}{{}}}
+\bibcite{Kirkpatrick1983}{{67}{1983}{{Kirkpatrick et~al}}{{Kirkpatrick, Gelatt, and Vecchi}}}
+\bibcite{Pandini2012}{{68}{2012}{{Pandini et~al}}{{Pandini, Fornili, Fraternali, and Kleinjung}}}
+\bibcite{Bonomi2017}{{69}{2017}{{Bonomi et~al}}{{Bonomi, Heller, Camilloni, and Vendruscolo}}}
+\bibcite{Kikhney2015}{{70}{2015}{{Kikhney and Svergun}}{{}}}
+\bibcite{Kleckner2011}{{71}{2011}{{Kleckner and Foster}}{{}}}
+\bibcite{Chakroun2013}{{72}{2013}{{Chakroun et~al}}{{Chakroun, Fornili, Prigent, Kleinjung, Dreiss, Rezaei, and Fraternali}}}
+\bibcite{Collu2018}{{73}{2018}{{Collu et~al}}{{Collu, Spiga, Chakroun, Rezaei, and Fraternali}}}
+\bibcite{DeSimone2005}{{74}{2005}{{{De Simone} et~al}}{{{De Simone}, Dodson, Verma, Zagari, and Fraternali}}}
+\bibcite{DeSimone2006}{{75}{2006}{{{De Simone} et~al}}{{{De Simone}, Dodson, Fraternali, and Zagari}}}
+\bibcite{Sengupta2019}{{76}{2019}{{Sengupta et~al}}{{Sengupta, Carballo-Pacheco, and Strodel}}}
+\bibcite{Risselada2008}{{77}{2008}{{Risselada and Marrink}}{{}}}
+\bibcite{Song2019}{{78}{2019}{{Song et~al}}{{Song, de~Groot, and Sansom}}}
+\bibcite{Leontiadou2006}{{79}{2006}{{Leontiadou et~al}}{{Leontiadou, Mark, and Marrink}}}
+\bibcite{Ulmschneider2017}{{80}{2017}{{Ulmschneider}}{{}}}
+\bibcite{Sun2015}{{81}{2015}{{Sun et~al}}{{Sun, Forsman, and Woodward}}}
+\bibcite{Wang2012}{{82}{2012}{{Wang et~al}}{{Wang, Schlamadinger, Kim, and McCammon}}}
+\bibcite{Zhao2018}{{83}{2018}{{Zhao et~al}}{{Zhao, Cao, Bian, Hu, Wang, and Zhou}}}
+\bibcite{Chen2019}{{84}{2019}{{Chen et~al}}{{Chen, Starr, Troendle, Wiedman, Wimley, Ulmschneider, and Ulmschneider}}}
+\bibcite{Castelletto2016}{{85}{2016}{{Castelletto et~al}}{{Castelletto, de~Santis, Alkassem, Lamarre, Noble, Ray, Bella, Burns, Hoogenboom, Ryadnov, Vandesompele, and Wittwer}}}
+\bibcite{Tang2009}{{86}{2009}{{Tang and Hong}}{{}}}
+\bibcite{Glukhov2005}{{87}{2005}{{Glukhov et~al}}{{Glukhov, Stark, Burrows, and Deber}}}
+\bibcite{Khalid2019}{{88}{2019}{{Khalid et~al}}{{Khalid, Piggot, and Samsudin}}}
+\bibcite{Piggot2011}{{89}{2011}{{Piggot et~al}}{{Piggot, Holdbrook, and Khalid}}}
+\bibcite{Carpenter2016}{{90}{2016}{{Carpenter et~al}}{{Carpenter, Parkin, and Khalid}}}
+\bibcite{Hsu2017}{{91}{2017}{{Hsu et~al}}{{Hsu, Samsudin, Shearer, and Khalid}}}
+\bibcite{Fowler2016}{{92}{2016}{{Fowler et~al}}{{Fowler, H{\'{e}}, Duncan, Chavent, Kolds{\o }, and Sansom}}}
+\bibcite{VanGunsteren2008}{{93}{2008}{{van Gunsteren et~al}}{{van Gunsteren, Dolenc, and Mark}}}
+\bibcite{Goncalves2013}{{94}{2013}{{Gon{\c {c}}alves et~al}}{{Gon{\c {c}}alves, Dreyer, Lupieri, Barrera-Pati{\~{n}}o, Ippoliti, Webb, Corrie, and Carloni}}}
+\bibcite{Meissner2014}{{95}{2014}{{Mei{\ss }ner et~al}}{{Mei{\ss }ner, Schneider, Schiffels, and {Colombi Ciacchi}}}}
+\bibcite{Bernardi2015}{{96}{2015}{{Bernardi et~al}}{{Bernardi, Melo, and Schulten}}}
+\bibcite{Best2005}{{97}{2005}{{Best et~al}}{{Best, Clarke, and Karplus}}}
+\bibcite{Barducci2010}{{98}{2010}{{Barducci et~al}}{{Barducci, Bonomi, and Parrinello}}}
+\bibcite{Barducci2011}{{99}{2011}{{Barducci et~al}}{{Barducci, Bonomi, and Parrinello}}}
+\bibcite{Mills2008}{{100}{2008}{{Mills and Andricioaei}}{{}}}
 \immediate\closeout\minitoc
