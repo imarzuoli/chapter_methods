@@ -4,15 +4,12 @@ The top-level auxiliary file: chapter_MD_methods.aux
 The style file: my_bib.bst
 Database file #1: thesis_ref2.bib.bib
 Warning--I'm ignoring Machado2018's extra "doi" field
---line 4111 of file thesis_ref2.bib.bib
-Warning--I'm ignoring Leontiadou2006's extra "publisher" field
---line 4459 of file thesis_ref2.bib.bib
+--line 4131 of file thesis_ref2.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You can't pop an empty literal stack for entry Lee2009
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Dror2012
 while executing---line 1649 of file my_bib.bst
-Warning--empty booktitle in Vogel2017
 You can't pop an empty literal stack for entry Vogel2017
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Heo2018
@@ -26,6 +23,8 @@ while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Andersen1980
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Bussi2007
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Durrett2010
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Parrinello1981
 while executing---line 1649 of file my_bib.bst
@@ -86,6 +85,14 @@ You can't pop an empty literal stack for entry Reif2013
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Berendsen1981
 while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Mark2001
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Reif2012
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Margreitter2017
+while executing---line 1649 of file my_bib.bst
+You can't pop an empty literal stack for entry Marzuoli2019
+while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry PDB
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Periole2009
@@ -118,7 +125,6 @@ You can't pop an empty literal stack for entry Kleinjung2003
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Kleinjung2012
 while executing---line 1649 of file my_bib.bst
-Warning--empty booktitle in Fornili2012
 You can't pop an empty literal stack for entry Fornili2012
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Zhu2005
@@ -201,45 +207,45 @@ You can't pop an empty literal stack for entry Barducci2011
 while executing---line 1649 of file my_bib.bst
 You can't pop an empty literal stack for entry Mills2008
 while executing---line 1649 of file my_bib.bst
-You've used 95 entries,
+You've used 100 entries,
             3261 wiz_defined-function locations,
-            1501 strings with 36930 characters,
-and the built_in function-call counts, 102887 in all, are:
-= -- 9449
-> -- 2651
-< -- 26
-+ -- 1089
-- -- 783
-* -- 9753
-:= -- 13719
-add.period$ -- 95
-call.type$ -- 95
-change.case$ -- 382
-chr.to.int$ -- 95
-cite$ -- 98
-duplicate$ -- 9349
-empty$ -- 9877
-format.name$ -- 1096
-if$ -- 21810
+            1539 strings with 37917 characters,
+and the built_in function-call counts, 107579 in all, are:
+= -- 9864
+> -- 2747
+< -- 27
++ -- 1132
+- -- 809
+* -- 10213
+:= -- 14350
+add.period$ -- 100
+call.type$ -- 100
+change.case$ -- 406
+chr.to.int$ -- 100
+cite$ -- 101
+duplicate$ -- 9783
+empty$ -- 10363
+format.name$ -- 1137
+if$ -- 22793
 int.to.chr$ -- 1
-int.to.str$ -- 96
-missing$ -- 866
-newline$ -- 295
-num.names$ -- 287
-pop$ -- 1536
+int.to.str$ -- 101
+missing$ -- 917
+newline$ -- 310
+num.names$ -- 306
+pop$ -- 1610
 preamble$ -- 1
-purify$ -- 285
+purify$ -- 300
 quote$ -- 0
-skip$ -- 1257
+skip$ -- 1281
 stack$ -- 0
-substring$ -- 13194
-swap$ -- 2317
-text.length$ -- 4
+substring$ -- 13790
+swap$ -- 2429
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 568
-warning$ -- 3
-while$ -- 661
+type$ -- 596
+warning$ -- 1
+while$ -- 697
 width$ -- 0
-write$ -- 1149
-(There were 95 error messages)
+write$ -- 1211
+(There were 100 error messages)
