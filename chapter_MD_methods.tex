@@ -273,8 +273,12 @@ Another speed up technique is constituted by hybrid particle-field algorithms. T
 
 Finally, further strategies are possible to enhance the sampling performed by a simulation in the case that the one obtained by the natural evolution of the system would exceed the computational time available. As a non comprehensive list of these techniques, we mention replica-exchange algorithms \cite{Okamoto2004} which combine together multiple simulations held at different conditions, local potential-energy elevation (or metadynamics) \cite{Huber1994,Laio2002} which avoids the re-sampling of already visited conformations adding an energy penalty to them, umbrella sampling \cite{Torrie1977} which reconstructs free-energy barriers from simulations performed at specific values of the coordinate along which the barrier exists, or finally the simple use of higher temperature to overcome energy barriers \cite{Kirkpatrick1983}.
 
+\section{Methods: setup and relevant examples} \label{sec:methods}
+
+Several established procedures have been devised for MD simulations of biomolecules. Nevertheless, each case requires a careful investigation to find the simulations conditions that suit best. We list below the key components and routines necessary to run a simulation, suggesting the user to tune the protocols referring to validated literature examples, as for example the ones in Section \ref{examples}.
+
 \subsection{System setup}
-To set up a simulation, the desired resolution, i.e. force field, must be chosen according to the system to simulate. A few examples on this will be given in Section \ref{sec:methods}; however, for any choice of parameters, some common ``ingredients" and steps are necessary to prepare the system:
+To set up a simulation, the desired resolution, i.e. force field, must be chosen according to the system to simulate. A few examples on this will be given in Section \ref{examples}; however, for any choice of parameters, some common ``ingredients" and steps are necessary to prepare the system:
 \begin{itemize}
 \item \textbf{structural file}: a pdb file (or any structural file format suitable with the MD engine of choice) which contains only the elements to be simulated, with a correct format of names and positions. The choice of the initial conformation is particularly important, especially for atomistic resolution which can access limited time scales and thus is likely to sample conformations in the vicinity of the initial position.
 \item \textbf{topology file}: given a structural file, every MD engine has dedicated commands to retrieve the list of parameters for bonded atoms. The presence of exotic residues or a non-standard network of bonds might need case-to-case manual parametrisation.
@@ -290,7 +294,9 @@ In the case of lipids instead, to reproduce an infinite membrane and account for
 \end{itemize}
 
 
-\section{Methods: relevant examples} \label{sec:methods}
+
+
+\subsection{Examples} \label{examples}
 One of the challenges of MD simulations consists in choosing the most suitable granularity of the description, together with the choice of the system to simulate. We list here a few examples which might convey better the idea of suitable setup  for systems of current interest.
 
 \runinhead{Simulations of protein and their interactions}
