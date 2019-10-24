@@ -197,7 +197,7 @@ The treatment of non-bonded interactions requires particular care because of the
 %
 The van der Waals forces decay fast, therefore the tail of their functional can be cut after a threshold distance with little impact on the outcome; while Coulomb interactions, with their slower decay, must be taken into account throughout the whole simulation box. Many algorithms have been devised to efficiently compute them, like the Particle Mesh Ewald \cite{Essmann1995} or the Reaction Field \cite{Tironi1995} approaches. 
 
-Finally, force fields designed to describe biomolecule are parametrised to describe systems at room temperature. Therefore, care should be taken when intepreting simulations performed at substantially different temperatures.
+Finally, force fields designed to describe biomolecule are parametrised to describe systems at room temperature. Therefore, care should be taken when interpreting simulations performed at substantially different temperatures.
 
 
 \subsubsection{Force fields: classifications} \label{sec:ff_ex}
@@ -225,7 +225,7 @@ We now give a more detailed insight in the characteristics and parametrisation s
 \subsubsection{The GROMOS force field}
 All-atoms and united atoms force field are parametrised against experimental values.
 %
-While for the all-atom force fields AMBER and CHARMM the parametrisation is based on \emph{ab initio} quantum mechanics calculations refined against experimental data \cite{Maier2015,Dickson2014,Wang2004_amber,MacKerell1998,Klauda2010}, the united atom GROMOS force field relies on the reproduction of free enthalpies of solvation and heat of vaporization of small molecules at physiological temperatures and pressures \cite{Oostenbrink2005,Schmid2011,Reif2013}.
+While for the all-atom force fields AMBER and CHARMM the parametrisation is based on \emph{ab initio} quantum mechanics calculations refined against experimental data \cite{Maier2015,Dickson2014,Wang2004_amber,MacKerell1998,Klauda2010}, the united atom GROMOS force field relies on the reproduction of free enthalpies of solvation and heat of vaporisation of small molecules at physiological temperatures and pressures \cite{Oostenbrink2005,Schmid2011,Reif2013}.
 %
 This procedure sets not only the constant of the bonded interactions, but also the partial charges of the atoms inside a molecule: as no electrons are included for the sake of efficiency, their redistribution across atoms which are bonded is modelled through fractional charges assigned to each atom (while the total charge of a molecule must sum to an integer).
 %
